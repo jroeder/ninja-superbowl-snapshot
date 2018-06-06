@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>SuperBOWL Help</title>
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="superbowl-help.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Sidebar Holder -->
+      <nav id="sidebar">
+        <div class="sidebar-header">
+          <h3><a href="http://localhost:9000/superbowl" target="_blank">SuperBOWL</a> Help</h3>
+          <strong>SB</strong> </div>
+        <ul class="list-unstyled components">
+          <li> <a href="index.html"> <i class="glyphicon glyphicon-home"></i>
+              Home </a> </li>
+          <li> <a href="sb.html"> <i class="glyphicon glyphicon-hourglass"></i>
+              Applikation </a> </li>
+          <li> <a href="#h2Submenu" data-toggle="collapse" aria-expanded="true">
+              <i class="glyphicon glyphicon-hdd"></i> Datenbank </a>
+            <ul class="collapse list-unstyled in" id="h2Submenu">
+              <li><a href="h2.html">Einführung</a></li>
+              <li><a href="h2-start-stop.html">Start/Stop</a></li>
+              <li class="active"><a href="h2-backup-restore.html">Backup/Restore</a></li>
+            </ul>
+          </li>
+          <li> <a href="admin.html"> <i class="glyphicon glyphicon-paperclip"></i>
+              Administration </a> </li>
+          <!--
+          <li> <a href="admin.html"> <i class="glyphicon glyphicon-briefcase"></i>              Administration </a> <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">              <i class="glyphicon glyphicon-duplicate"></i> Administration </a>            <ul class="collapse list-unstyled" id="pageSubmenu">              <li><a href="#">Page 1</a></li>              <li><a href="#">Page 2</a></li>              <li><a href="#">Page 3</a></li>            </ul>          </li>					-->
+          <li> <a href="about.html"> <i class="glyphicon glyphicon-education"></i>
+              About </a> </li>
+        </ul>
+        <!--
+        <ul class="list-unstyled CTAs">          <li><a href="https://bootstrapious.com/tutorial/files/sidebar.zip" class="download">Download              source</a></li>          <li><a href="https://bootstrapious.com/p/bootstrap-sidebar" class="article">Back              to article</a></li>        </ul>				-->
+      </nav>
+      <!-- Page Content Holder -->
+      <div id="content">
+        <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <div class="navbar-header"> <button type="button" id="sidebarCollapse"
+                class="btn btn-info navbar-btn"> <i class="glyphicon glyphicon-align-left"></i>
+                <span>Toggle Sidebar</span> </button> </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right">
+                <!--
+                <li><a href="#">Page</a></li>
+                <li><a href="#">Page</a></li>
+                <li><a href="#">Page</a></li>
+                <li><a href="#">Page</a></li>
+								-->
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!--
+        <div class="line"></div>        -->
+        <div class="container-fluid">
+          <div class="row-fluid">
+            <div class="col-md-12">
+              <p style="margin-bottom:75px"> </p>
+              <h2>Datenbank Backup/Restore</h2>
+              <p></p>
+              <p>Zum Sichern/Wiederherstellen der H2 Datenbank im laufenden
+                Betrieb (also bei gestarteter Datenbank) verwendet man am
+                einfachsten die in der Distribution bereitgestellte Web-Konsole.
+                Zum Starten der H2 Web-Konsole öffnest Du ein Terminalfenster,
+                navigierst in den Pfad <strong>/opt/h2/server/bin</strong> und
+                starest die Konsole mittels <strong>./h2.sh</strong>.</p>
+              <p> </p>
+              <table>
+                <tbody>
+                  <tr>
+                    <th width="500px">Aktion</th>
+                    <th width="700px">Verzeichnis</th>
+                    <th width="800px">Kommando (Terminal)</th>
+                  </tr>
+                  <tr>
+                    <td>H2 Web-Konsole starten</td>
+                    <td>/opt/h2/server/bin</td>
+                    <td>./h2.sh</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p></p>
+            </div>
+          </div>
+          	<!-- ./row-fluid -->
+        </div>
+        <!-- ./container-fluid -->
+        <div class="container-fluid">
+          <div class="row-fluid">
+            <div class="col-md-5">
+              <p></p>
+              <h3>H2 Web-Konsole starten</h3>
+              <p></p>
+              <p>Die H2 Web-Konsole wird mittels der URL <a href="http://127.0.1.1:8082"
+                  target="_blank"><strong>http://127.0.1.1:8082</strong></a>
+                gestartet (siehe Abb. 1).</p>
+              <p>Die im Feld JDBC URL einzutragende URL lautet:<br>
+                <strong>jdbc:h2:tcp://localhost:9092//opt/h2/store/superbowl/superbowlDB</strong></p>
+              <p>Ein Klick auf den Button <strong>Verbindung testen</strong>
+                zeigt, ob die Datenbankverbindung besteht (<span style="color:red">
+                  Test erfolgreich </span>). </p>
+            </div>
+            <div class="col-md-7">
+              <p><br>
+                <br>
+              </p>
+              <p> <img src="images/h2-web-konsole.png" alt="H2 Web Konsole"><br>
+                Abb.1: H2 Web-Konsole </p>
+            </div>
+          </div>
+          	<!-- ./row-fluid -->
+        </div>
+        <!-- ./container-fluid -->
+        <div class="container-fluid">
+          <div class="row-fluid">
+            <div class="col-md-5">
+              <p></p>
+              <h3>Sprache auswählen</h3>
+              <p></p>
+              <p>Durch einen Klick auf das nach unten gerichtete kleine Dreieck
+                der Dropdown-Box links oben in der H2 Web-Konsole kann die
+                Sprache ausgewählt werden (siehe Abb. 2).</p>
+            </div>
+            <div class="col-md-7">
+              <p><br>
+                <br>
+              </p>
+              <p> <img src="images/h2-web-konsole-de.png" alt="H2 Web Konsole"><br>
+                Abb.2: Sprache auswählen </p>
+            </div>
+          </div>
+          <hr>
+          <div class="row-fluid">
+            <div class="col-md-5">
+              <p></p>
+              <h3>Zu Tools wechseln</h3>
+              <p></p>
+              <p>Ein Klick auf den Menueintrag <strong>tools</strong> in der H2
+                Web-Konsole zeigt die für die Administration der H2 Datenbank
+                zur Verfügung stehenden Online-Werkzeuge (siehe Abb. 3).</p>
+            </div>
+            <div class="col-md-7">
+              <p><br>
+                <br>
+              </p>
+              <p> <img src="images/h2-web-konsole-tools.png" alt="H2 Web Konsole"><br>
+                Abb.3: Tools </p>
+            </div>
+          </div>
+          	<!-- ./row-fluid -->
+        </div>
+        <!-- ./container-fluid -->
+        <div class="container-fluid">
+          	<div class="row-fluid">
+            	<div class="col-md-5">
+              		<p></p>
+              		<h3>Backup</h3>
+              		<p></p>
+              		<p>Durch einen Klick auf den Menueintrag <strong>Backup</strong> öffnet das Backup-Eingabefenster (siehe Abb. 4).</p>
+              		<p>Es empfiehlt sich die Namen der Datenbank-Sicherungsdateien nach einem bestimmten Schema aufzubauen (z.B. <span style="color:red">	h2-{applikationsname}-backup-{yyyy-mm-dd}.zip</span>).<br>
+                	Konkret lautet dann der Name der H2-Sicherungsdatei z.B.</p>
+              		<p><span style="color:red">h2-superbowl-backup-2017-09-05.zip</span></p>
+              		<p>Alle Backup-Dateien sollten in das Verzeichnis <span style="color:red">/opt/h2/backup</span> gelegt werden. Von dort können sie dann bei Bedarf zur Wiederherstellung der H2 Datenbank herangezogen werden.</p>
+              		<p></p>
+              		<p>In die Eingabefelder der Backup-Maske gibst Du folgende Daten ein:<br>
+              		</p>
+              		<table>
+                		<tbody>
+	                  		<tr>
+	                    		<th width="150px">Feld</th>
+	                    		<th width="340px">Inhalt</th>
+	                  		</tr>
+	                  		<tr>
+	                    		<td>Ziel-Dateiname</td>
+	                    		<td><span style="color:red">/opt/h2/backup/h2-superbowl-backup-{yyyy-mm-dd}.zip</span></td>
+	                  		</tr>
+	                  		<tr>
+	                    		<td>Quell-Verzeichnis</td>
+	                    		<td><span style="color:red">/opt/h2/store/superbowl</span></td>
+	                  		</tr>
+	                  		<tr>
+	                    		<td>Quell-Datenbankname</td>
+	                    		<td><span style="color:red">superbowlDB</span></td>
+	                  		</tr>
+                		</tbody>
+              		</table>
+              		<p></p>
+              		<p>Klick auf den Button <strong>Start</strong> startet den Backup-Prozess.</p>
+            	</div>
+            	<div class="col-md-7">
+					<p><br><br></p>
+              		<p> <img src="images/h2-web-konsole-backup.png" alt="H2 Web Konsole"><br>
+                	Abb.4: Backup der SuperbowlDB </p>
+            	</div>
+          	</div>
+          	<!-- ./row-fluid -->
+        </div>
+        <!-- ./container-fluid -->
+        <div class="container-fluid">
+          	<div class="row-fluid">
+            	<div class="col-md-5">
+              		<p></p>
+              		<h3>Restore</h3>
+              		<p></p>
+              		<p>Durch einen Klick auf den Menueintrag <strong>Restore</strong> öffnet das Restore-Eingabefenster (siehe Abb. 5).</p>
+              		<p>In die Eingabefelder der Restore-Maske gibst Du folgende Daten ein:<br>
+              		</p>
+					<table>
+						<tbody>
+	                  		<tr>
+	                    		<th width="150px">Feld</th>
+	                    		<th width="340px">Inhalt</th>
+	                  		</tr>
+	                  		<tr>
+	                    		<td>Quell-Dateiname</td>
+	                    		<td><span style="color:red">/opt/h2/backup/h2-superbowl-backup-{yyyy-mm-dd}.zip</span></td>
+	                  		</tr>
+	                  		<tr>
+	                    		<td>Ziel-Verzeichnis</td>
+	                    		<td><span style="color:red">/opt/h2/store/superbowl</span></td>
+	                  		</tr>
+							<tr>
+								<td>Ziel-Datenbankname</td>
+								<td><span style="color:red">superbowlDB</span></td>
+							</tr>
+						</tbody>
+					</table>
+              		<p></p>
+					<p>Klick auf den Button <strong>Start</strong> startet den Restore-Prozess.</p>
+            	</div>
+            	<div class="col-md-7">
+					<p><br><br></p>
+		    		<p> <img src="images/h2-web-konsole-restore.png" alt="H2 Web Konsole"><br>
+		                Abb.5: Restore der SuperbowlDB </p>
+	            </div>
+			</div>
+			<!-- ./row-fluid -->
+    	</div>
+        <!-- ./container-fluid -->
+    </div>
+    <!-- ./wrapper -->
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <!-- Bootstrap Js CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+             $(document).ready(function () {
+                 $('#sidebarCollapse').on('click', function () {
+                     $('#sidebar').toggleClass('active');
+                 });
+             });
+         </script>
+    
+  </body>
+</html>

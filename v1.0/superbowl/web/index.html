@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>SuperBOWL Help</title>
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="superbowl-help.css">
+  </head>
+  <body>
+    <div class="wrapper"> <!-- Sidebar Holder -->
+      <nav id="sidebar">
+        <div class="sidebar-header">
+          <h3><a href="http://localhost:9000/superbowl" target="_blank">SuperBOWL</a> Help</h3>
+          <strong>SB</strong> </div>
+        <ul class="list-unstyled components">
+          <li class="active"> <a href="index.html"> <i class="glyphicon glyphicon-home"></i>
+              Home </a> </li>
+          <li> <a href="sb.html"> <i class="glyphicon glyphicon-hourglass"></i>
+              Applikation </a> </li>
+          <li> <a href="#h2Submenu" data-toggle="collapse" aria-expanded="false">
+              <i class="glyphicon glyphicon-hdd"></i> Datenbank </a>
+            <ul class="collapse list-unstyled" id="h2Submenu">
+              <li><a href="h2.html">Einführung</a></li>
+              <li><a href="h2-start-stop.html">Start/Stop</a></li>
+              <li><a href="h2-backup-restore.html">Backup/Restore</a></li>
+            </ul>
+          </li>
+          <li> <a href="admin.html"> <i class="glyphicon glyphicon-paperclip"></i>
+              Administration </a> </li>
+          <!--
+          <li> <a href="admin.html"> <i class="glyphicon glyphicon-briefcase"></i>              Administration </a> <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">              <i class="glyphicon glyphicon-duplicate"></i> Administration </a>            <ul class="collapse list-unstyled" id="pageSubmenu">
+              <li><a href="#">Page 1</a></li>              <li><a href="#">Page 2</a></li>              <li><a href="#">Page 3</a></li>            </ul>
+          </li>					-->
+          <li> <a href="about.html"> <i class="glyphicon glyphicon-education"></i>
+              About </a> </li>
+        </ul>
+        <!--
+        <ul class="list-unstyled CTAs">          <li><a href="https://bootstrapious.com/tutorial/files/sidebar.zip" class="download">Download              source</a></li>          <li><a href="https://bootstrapious.com/p/bootstrap-sidebar" class="article">Back
+              to article</a></li>        </ul>				--> </nav>
+      <!-- Page Content Holder -->
+      <div id="content">
+        <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <div class="navbar-header"> <button type="button" id="sidebarCollapse"
+                class="btn btn-info navbar-btn"> <i class="glyphicon glyphicon-align-left"></i>
+                <span>Toggle Sidebar</span> </button> </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right">
+                <!--
+                <li><a href="#">Page</a></li>
+                <li><a href="#">Page</a></li>
+                <li><a href="#">Page</a></li>
+                <li><a href="#">Page</a></li>
+								-->
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <div class="line"></div>
+        <h2>Einführung in Superbowl</h2>
+        <p class="lead">Hier erhälst Du Informationen zum Starten/Stoppen der H2
+          Datenbank und der Superbowl Applikation sowie zur Verwaltung der
+          Bilder welche in der Applikation benutzt werden!</p>
+        <hr class="my-4">
+        <p>Alle Kommandos zum Starten/Stoppen der Datenbank und der Applikation
+          werden in einem einzigen <span style="color:red"><strong>Terminalfenster</strong></span>
+          ausgeführt.</p>
+        <p>Da es sich bei den Kommandos und das Ausführen eines Unix Shell
+          Scripts handelt muß jedem Kommando ein <span style="color:red"><strong>./</strong></span>
+          vorangestellt werden.</p>
+        <p>Die generelle Syntax zum Ausführen der Scripte lautet <span style="color:red"><strong>[sudo]
+              ./ {Kommando} {Option}</strong></span> wobei <span style="color:red"><strong>sudo</strong></span>
+          nur zum Starten/Stoppen der Superbowl Applikation benötigt wird.</p>
+        <p>Reihenfolge der Skriptaufrufe:</p>
+        <p> </p>
+        <ol>
+          <li>Nach dem Booten des Rechners
+            <p> </p>
+            <ul>
+              <li>H2 Datenbank starten</li>
+              <li>Superbowl Applikation starten</li>
+            </ul>
+            <p></p>
+          </li>
+          <li>Vor dem Runterfahren des Rechners
+            <p> </p>
+            <ul>
+              <li>Superbowl Applikation stoppen</li>
+              <li>H2 Datenbank stoppen</li>
+            </ul>
+            <p></p>
+          </li>
+        </ol>
+        <p></p>
+        <p>Beim Starten der Superbowl Applikation mit <span style="color:red"><strong>sudo</strong></span>
+          wird noch das Passwort des aktuell am Linux System angemeldeten
+          Benutzers abgefragt. In Deinem Fall musst Du das Passwort des
+          Benutzers <span style="color:red"><strong>thomas</strong></span>
+          eingeben! </p>
+        <p>Im Browser Deiner Wahl (Empfehlung: <a href="http://www.opera.com/de"
+            target="_blank"><strong>Opera</strong></a>) die URL <strong><a href="http://localhost:9000/superbowl"
+              target="_blank">http://localhost:9000/superbowl</a></strong>
+          eingeben. Voila - Superbowl hero starting!!!</p>
+        <!--
+  			<div class="line"></div>        <h2>Lorem Ipsum Dolor</h2>        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut          aliquip ex ea commodo consequat. Duis aute irure dolor in          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.</p>        <div class="line"></div>        <h2>Lorem Ipsum Dolor</h2>        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad          minim veniam, quis nostrud exercitation ullamco laboris nisi ut          aliquip ex ea commodo consequat. Duis aute irure dolor in          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in          culpa qui officia deserunt mollit anim id est laborum.</p>        <div class="line"></div>        <h3>Lorem Ipsum Dolor</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad          minim veniam, quis nostrud exercitation ullamco laboris nisi ut          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in          culpa qui officia deserunt mollit anim id est laborum.</p>				-->
+      </div>
+    </div>
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <!-- Bootstrap Js CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+             $(document).ready(function () {
+                 $('#sidebarCollapse').on('click', function () {
+                     $('#sidebar').toggleClass('active');
+                 });
+             });
+         </script>
+  </body>
+</html>

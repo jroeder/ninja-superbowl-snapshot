@@ -1,0 +1,1148 @@
+10:37:32.440 [main] INFO  ninja.utils.NinjaModeHelper - Ninja is running in mode prod
+10:37:33.779 [NinjaJetty] INFO  org.eclipse.jetty.util.log - Logging initialized @3514ms
+10:37:34.006 [NinjaJetty] WARN  o.e.j.server.handler.ContextHandler - Empty contextPath
+10:37:34.087 [NinjaJetty] INFO  ninja.standalone.NinjaJetty - Trying to start jetty vnull on <all>:9000
+10:37:34.096 [NinjaJetty] INFO  org.eclipse.jetty.server.Server - jetty-9.3.z-SNAPSHOT
+10:37:35.518 [NinjaJetty] INFO  ninja.Bootstrap - Successfully configured Logback.
+10:37:35.543 [NinjaJetty] INFO  ninja.Bootstrap - Enabling Ninja classic configuration
+10:37:39.664 [NinjaJetty] INFO  ninja.cache.CacheProvider - Using ninja.cache.CacheEhCacheImpl as implementation for ninja.cache.Cache
+10:37:40.423 [NinjaJetty] INFO  ninja.utils.SwissKnife - Could not load file conf/messages_de_DE.properties (not a bad thing necessarily, but I am returing null)
+10:37:40.424 [NinjaJetty] INFO  ninja.i18n.MessagesImpl - Did not find conf/messages_de_DE.properties but it was specified in application.conf. Using default language instead.
+10:37:40.424 [NinjaJetty] INFO  ninja.utils.SwissKnife - Could not load file conf/messages_en_GB.properties (not a bad thing necessarily, but I am returing null)
+10:37:40.424 [NinjaJetty] INFO  ninja.i18n.MessagesImpl - Did not find conf/messages_en_GB.properties but it was specified in application.conf. Using default language instead.
+10:37:41.226 [NinjaJetty] INFO  n.template.TemplateEngineManagerImpl - -------------------------------------------------------------------
+10:37:41.227 [NinjaJetty] INFO  n.template.TemplateEngineManagerImpl - Registered response template engines
+10:37:41.232 [NinjaJetty] INFO  n.template.TemplateEngineManagerImpl - -------------------------------------------------------------------
+10:37:41.234 [NinjaJetty] INFO  n.template.TemplateEngineManagerImpl - application/javascript  =>  ninja.template.TemplateEngineJsonP
+10:37:41.234 [NinjaJetty] INFO  n.template.TemplateEngineManagerImpl - application/json        =>  ninja.template.TemplateEngineJson
+10:37:41.234 [NinjaJetty] INFO  n.template.TemplateEngineManagerImpl - application/xml         =>  ninja.template.TemplateEngineXml
+10:37:41.234 [NinjaJetty] INFO  n.template.TemplateEngineManagerImpl - text/html               =>  ninja.template.TemplateEngineFreemarker
+10:37:41.234 [NinjaJetty] INFO  n.template.TemplateEngineManagerImpl - text/plain              =>  ninja.template.TemplateEngineText
+10:37:41.377 [NinjaJetty] INFO  n.b.BodyParserEngineManagerImpl - ----------------------------------------------------------------------------
+10:37:41.377 [NinjaJetty] INFO  n.b.BodyParserEngineManagerImpl - Registered request bodyparser engines
+10:37:41.378 [NinjaJetty] INFO  n.b.BodyParserEngineManagerImpl - ----------------------------------------------------------------------------
+10:37:41.378 [NinjaJetty] INFO  n.b.BodyParserEngineManagerImpl - application/json                   =>  ninja.bodyparser.BodyParserEngineJson
+10:37:41.378 [NinjaJetty] INFO  n.b.BodyParserEngineManagerImpl - application/x-www-form-urlencoded  =>  ninja.bodyparser.BodyParserEnginePost
+10:37:41.378 [NinjaJetty] INFO  n.b.BodyParserEngineManagerImpl - application/xml                    =>  ninja.bodyparser.BodyParserEngineXml
+10:37:41.379 [NinjaJetty] INFO  ninja.Bootstrap - Ninja injector started in 5827 ms.
+10:37:41.587 [NinjaJetty] WARN  ninja.params.ControllerMethodInvoker - Using deprecated non-strict mode for injection of parameters into controller (ninja.strict_argument_extractors = false). This mode will soon be removed from Ninja. Make sure you upgrade your application as soon as possible. More: http://www.ninjaframework.org/documentation/basic_concepts/controllers.html 'A note about null and Optional'.
+10:37:42.246 [NinjaJetty] INFO  ninja.RouterImpl - ------------------------------------------------------------------------------------------------------------------------------
+10:37:42.246 [NinjaJetty] INFO  ninja.RouterImpl - Registered routes
+10:37:42.246 [NinjaJetty] INFO  ninja.RouterImpl - ------------------------------------------------------------------------------------------------------------------------------
+10:37:42.246 [NinjaJetty] INFO  ninja.RouterImpl - GET  /                                             =>  controllers.ApplicationController.index()
+10:37:42.247 [NinjaJetty] INFO  ninja.RouterImpl - GET  /superbowl                                    =>  controllers.ApplicationController.index()
+10:37:42.253 [NinjaJetty] INFO  ninja.RouterImpl - GET  /exhibitions                                  =>  controllers.ApplicationController.exhibitions()
+10:37:42.254 [NinjaJetty] INFO  ninja.RouterImpl - GET  /events                                       =>  controllers.ApplicationController.events()
+10:37:42.254 [NinjaJetty] INFO  ninja.RouterImpl - GET  /news                                         =>  controllers.ApplicationController.news()
+10:37:42.254 [NinjaJetty] INFO  ninja.RouterImpl - GET  /partners                                     =>  controllers.ApplicationController.partners()
+10:37:42.254 [NinjaJetty] INFO  ninja.RouterImpl - GET  /profile                                      =>  controllers.ApplicationController.profile()
+10:37:42.254 [NinjaJetty] INFO  ninja.RouterImpl - GET  /roadmap                                      =>  controllers.ApplicationController.roadmap()
+10:37:42.254 [NinjaJetty] INFO  ninja.RouterImpl - GET  /settings                                     =>  controllers.ApplicationController.settings()
+10:37:42.254 [NinjaJetty] INFO  ninja.RouterImpl - GET  /software                                     =>  controllers.ApplicationController.software()
+10:37:42.254 [NinjaJetty] INFO  ninja.RouterImpl - GET  /specification                                =>  controllers.ApplicationController.specification()
+10:37:42.254 [NinjaJetty] INFO  ninja.RouterImpl - GET  /login                                        =>  controllers.ApplicationController.login()
+10:37:42.254 [NinjaJetty] INFO  ninja.RouterImpl - GET  /superbowl/exhibitions                        =>  controllers.ApplicationController.exhibitions()
+10:37:42.255 [NinjaJetty] INFO  ninja.RouterImpl - GET  /superbowl/events                             =>  controllers.ApplicationController.events()
+10:37:42.255 [NinjaJetty] INFO  ninja.RouterImpl - GET  /superbowl/news                               =>  controllers.ApplicationController.news()
+10:37:42.255 [NinjaJetty] INFO  ninja.RouterImpl - GET  /superbowl/partners                           =>  controllers.ApplicationController.partners()
+10:37:42.255 [NinjaJetty] INFO  ninja.RouterImpl - GET  /superbowl/profile                            =>  controllers.ApplicationController.profile()
+10:37:42.255 [NinjaJetty] INFO  ninja.RouterImpl - GET  /superbowl/roadmap                            =>  controllers.ApplicationController.roadmap()
+10:37:42.255 [NinjaJetty] INFO  ninja.RouterImpl - GET  /superbowl/settings                           =>  controllers.ApplicationController.settings()
+10:37:42.255 [NinjaJetty] INFO  ninja.RouterImpl - GET  /superbowl/software                           =>  controllers.ApplicationController.software()
+10:37:42.255 [NinjaJetty] INFO  ninja.RouterImpl - GET  /superbowl/specification                      =>  controllers.ApplicationController.specification()
+10:37:42.255 [NinjaJetty] INFO  ninja.RouterImpl - GET  /superbowl/login                              =>  controllers.ApplicationController.login()
+10:37:42.255 [NinjaJetty] INFO  ninja.RouterImpl - GET  /botanicSystem                                =>  controllers.BotanicSystemController.list()
+10:37:42.255 [NinjaJetty] INFO  ninja.RouterImpl - GET  /registerBotanicSystem                        =>  controllers.BotanicSystemController.registerBotanicSystem()
+10:37:42.255 [NinjaJetty] INFO  ninja.RouterImpl - POST /registerBotanicSystem                        =>  controllers.BotanicSystemController.registerBotanicSystem()
+10:37:42.255 [NinjaJetty] INFO  ninja.RouterImpl - POST /registerBotanicSystemConfirmation            =>  controllers.BotanicSystemController.registerBotanicSystemConfirmation()
+10:37:42.256 [NinjaJetty] INFO  ninja.RouterImpl - POST /registerBotanicSystemCompletion              =>  controllers.BotanicSystemController.registerBotanicSystemCompletion()
+10:37:42.256 [NinjaJetty] INFO  ninja.RouterImpl - GET  /superbowl/botanicSystem                      =>  controllers.BotanicSystemController.list()
+10:37:42.256 [NinjaJetty] INFO  ninja.RouterImpl - GET  /superbowl/registerBotanicSystem              =>  controllers.BotanicSystemController.registerBotanicSystem()
+10:37:42.256 [NinjaJetty] INFO  ninja.RouterImpl - POST /superbowl/registerBotanicSystem              =>  controllers.BotanicSystemController.registerBotanicSystem()
+10:37:42.256 [NinjaJetty] INFO  ninja.RouterImpl - POST /superbowl/registerBotanicSystemConfirmation  =>  controllers.BotanicSystemController.registerBotanicSystemConfirmation()
+10:37:42.256 [NinjaJetty] INFO  ninja.RouterImpl - POST /superbowl/registerBotanicSystemCompletion    =>  controllers.BotanicSystemController.registerBotanicSystemCompletion()
+10:37:42.256 [NinjaJetty] INFO  ninja.RouterImpl - GET  /bowl                                         =>  controllers.AbstractBowlController.listBowl()
+10:37:42.256 [NinjaJetty] INFO  ninja.RouterImpl - GET  /editBowl                                     =>  controllers.BowlController.editBowl()
+10:37:42.256 [NinjaJetty] INFO  ninja.RouterImpl - GET  /editBowlByStatusCode                         =>  controllers.BowlController.editBowl()
+10:37:42.256 [NinjaJetty] INFO  ninja.RouterImpl - POST /editBowlConfirmation                         =>  controllers.BowlController.editBowlConfirmation()
+10:37:42.256 [NinjaJetty] INFO  ninja.RouterImpl - POST /editBowlCompletion                           =>  controllers.BowlController.editBowlCompletion()
+10:37:42.256 [NinjaJetty] INFO  ninja.RouterImpl - GET  /updateBowl                                   =>  controllers.BowlController.updateBowl()
+10:37:42.256 [NinjaJetty] INFO  ninja.RouterImpl - POST /updateBowlConfirmation                       =>  controllers.BowlController.updateBowlConfirmation()
+10:37:42.257 [NinjaJetty] INFO  ninja.RouterImpl - POST /updateBowlCompletion                         =>  controllers.BowlController.updateBowlCompletion()
+10:37:42.257 [NinjaJetty] INFO  ninja.RouterImpl - GET  /modifyBowl                                   =>  controllers.BowlController.modifyBowl()
+10:37:42.257 [NinjaJetty] INFO  ninja.RouterImpl - GET  /registerBowl                                 =>  controllers.BowlController.registerBowl()
+10:37:42.257 [NinjaJetty] INFO  ninja.RouterImpl - POST /registerBowl                                 =>  controllers.BowlController.registerBowl()
+10:37:42.257 [NinjaJetty] INFO  ninja.RouterImpl - GET  /registerBowlByGeoRegionCode                  =>  controllers.BowlController.registerBowlByGeoRegionCode()
+10:37:42.257 [NinjaJetty] INFO  ninja.RouterImpl - GET  /registerBowlByManufactureYear                =>  controllers.BowlController.registerBowlByManufactureYear()
+10:37:42.257 [NinjaJetty] INFO  ninja.RouterImpl - GET  /registerBowlByStatusCode                     =>  controllers.BowlController.registerBowlByStatusCode()
+10:37:42.257 [NinjaJetty] INFO  ninja.RouterImpl - GET  /registerBowlByTimberCode                     =>  controllers.BowlController.registerBowlByTimberCode()
+10:37:42.257 [NinjaJetty] INFO  ninja.RouterImpl - POST /registerBowlConfirmation                     =>  controllers.BowlController.registerBowlConfirmation()
+10:37:42.257 [NinjaJetty] INFO  ninja.RouterImpl - POST /registerBowlCompletion                       =>  controllers.BowlController.registerBowlCompletion()
+10:37:42.257 [NinjaJetty] INFO  ninja.RouterImpl - GET  /registerBowlMod                              =>  controllers.BowlController.registerBowlMod()
+10:37:42.257 [NinjaJetty] INFO  ninja.RouterImpl - POST /registerBowlMod                              =>  controllers.BowlController.registerBowlMod()
+10:37:42.257 [NinjaJetty] INFO  ninja.RouterImpl - POST /registerBowlModConfirmation                  =>  controllers.BowlController.registerBowlModConfirmation()
+10:37:42.257 [NinjaJetty] INFO  ninja.RouterImpl - POST /registerBowlModCompletion                    =>  controllers.BowlController.registerBowlModCompletion()
+10:37:42.258 [NinjaJetty] INFO  ninja.RouterImpl - GET  /registerBowlModItem                          =>  controllers.BowlController.registerBowlModItem()
+10:37:42.258 [NinjaJetty] INFO  ninja.RouterImpl - POST /registerBowlModItem                          =>  controllers.BowlController.registerBowlModItem()
+10:37:42.258 [NinjaJetty] INFO  ninja.RouterImpl - POST /registerBowlModItemConfirmation              =>  controllers.BowlController.registerBowlModItemConfirmation()
+10:37:42.258 [NinjaJetty] INFO  ninja.RouterImpl - POST /registerBowlModItemCompletion                =>  controllers.BowlController.registerBowlModItemCompletion()
+10:37:42.258 [NinjaJetty] INFO  ninja.RouterImpl - GET  /superbowl/bowl                               =>  controllers.AbstractBowlController.listBowl()
+10:37:42.258 [NinjaJetty] INFO  ninja.RouterImpl - GET  /superbowl/editBowl                           =>  controllers.BowlController.editBowl()
+10:37:42.258 [NinjaJetty] INFO  ninja.RouterImpl - GET  /superbowl/editBowlByStatusCode               =>  controllers.BowlController.editBowl()
+10:37:42.258 [NinjaJetty] INFO  ninja.RouterImpl - POST /superbowl/editBowlConfirmation               =>  controllers.BowlController.editBowlConfirmation()
+10:37:42.258 [NinjaJetty] INFO  ninja.RouterImpl - POST /superbowl/editBowlCompletion                 =>  controllers.BowlController.editBowlCompletion()
+10:37:42.258 [NinjaJetty] INFO  ninja.RouterImpl - GET  /superbowl/updateBowl                         =>  controllers.BowlController.updateBowl()
+10:37:42.258 [NinjaJetty] INFO  ninja.RouterImpl - POST /superbowl/updateBowlConfirmation             =>  controllers.BowlController.updateBowlConfirmation()
+10:37:42.258 [NinjaJetty] INFO  ninja.RouterImpl - POST /superbowl/updateBowlCompletion               =>  controllers.BowlController.updateBowlCompletion()
+10:37:42.258 [NinjaJetty] INFO  ninja.RouterImpl - GET  /superbowl/modifyBowl                         =>  controllers.BowlController.modifyBowl()
+10:37:42.258 [NinjaJetty] INFO  ninja.RouterImpl - GET  /superbowl/registerBowl                       =>  controllers.BowlController.registerBowl()
+10:37:42.259 [NinjaJetty] INFO  ninja.RouterImpl - POST /superbowl/registerBowl                       =>  controllers.BowlController.registerBowl()
+10:37:42.259 [NinjaJetty] INFO  ninja.RouterImpl - GET  /superbowl/registerBowlByGeoRegionCode        =>  controllers.BowlController.registerBowlByGeoRegionCode()
+10:37:42.259 [NinjaJetty] INFO  ninja.RouterImpl - GET  /superbowl/registerBowlByManufactureYear      =>  controllers.BowlController.registerBowlByManufactureYear()
+10:37:42.259 [NinjaJetty] INFO  ninja.RouterImpl - GET  /superbowl/registerBowlByStatusCode           =>  controllers.BowlController.registerBowlByStatusCode()
+10:37:42.259 [NinjaJetty] INFO  ninja.RouterImpl - GET  /superbowl/registerBowlByTimberCode           =>  controllers.BowlController.registerBowlByTimberCode()
+10:37:42.259 [NinjaJetty] INFO  ninja.RouterImpl - POST /superbowl/registerBowlConfirmation           =>  controllers.BowlController.registerBowlConfirmation()
+10:37:42.259 [NinjaJetty] INFO  ninja.RouterImpl - POST /superbowl/registerBowlCompletion             =>  controllers.BowlController.registerBowlCompletion()
+10:37:42.259 [NinjaJetty] INFO  ninja.RouterImpl - GET  /superbowl/registerBowlMod                    =>  controllers.BowlController.registerBowlMod()
+10:37:42.259 [NinjaJetty] INFO  ninja.RouterImpl - POST /superbowl/registerBowlMod                    =>  controllers.BowlController.registerBowlMod()
+10:37:42.259 [NinjaJetty] INFO  ninja.RouterImpl - POST /superbowl/registerBowlModConfirmation        =>  controllers.BowlController.registerBowlModConfirmation()
+10:37:42.259 [NinjaJetty] INFO  ninja.RouterImpl - POST /superbowl/registerBowlModCompletion          =>  controllers.BowlController.registerBowlModCompletion()
+10:37:42.259 [NinjaJetty] INFO  ninja.RouterImpl - GET  /superbowl/registerBowlModItem                =>  controllers.BowlController.registerBowlModItem()
+10:37:42.259 [NinjaJetty] INFO  ninja.RouterImpl - POST /superbowl/registerBowlModItem                =>  controllers.BowlController.registerBowlModItem()
+10:37:42.259 [NinjaJetty] INFO  ninja.RouterImpl - POST /superbowl/registerBowlModItemConfirmation    =>  controllers.BowlController.registerBowlModItemConfirmation()
+10:37:42.260 [NinjaJetty] INFO  ninja.RouterImpl - POST /superbowl/registerBowlModItemCompletion      =>  controllers.BowlController.registerBowlModItemCompletion()
+10:37:42.260 [NinjaJetty] INFO  ninja.RouterImpl - GET  /customer                                     =>  controllers.CustomerController.list()
+10:37:42.269 [NinjaJetty] INFO  ninja.RouterImpl - GET  /registerCustomer                             =>  controllers.CustomerController.registerCustomer()
+10:37:42.270 [NinjaJetty] INFO  ninja.RouterImpl - POST /registerCustomer                             =>  controllers.CustomerController.registerCustomer()
+10:37:42.270 [NinjaJetty] INFO  ninja.RouterImpl - POST /registerCustomerConfirmation                 =>  controllers.CustomerController.registerCustomerConfirmation()
+10:37:42.270 [NinjaJetty] INFO  ninja.RouterImpl - POST /registerCustomerCompletion                   =>  controllers.CustomerController.registerCustomerCompletion()
+10:37:42.271 [NinjaJetty] INFO  ninja.RouterImpl - GET  /superbowl/customer                           =>  controllers.CustomerController.list()
+10:37:42.271 [NinjaJetty] INFO  ninja.RouterImpl - GET  /superbowl/registerCustomer                   =>  controllers.CustomerController.registerCustomer()
+10:37:42.271 [NinjaJetty] INFO  ninja.RouterImpl - POST /superbowl/registerCustomer                   =>  controllers.CustomerController.registerCustomer()
+10:37:42.271 [NinjaJetty] INFO  ninja.RouterImpl - POST /superbowl/registerCustomerConfirmation       =>  controllers.CustomerController.registerCustomerConfirmation()
+10:37:42.273 [NinjaJetty] INFO  ninja.RouterImpl - POST /superbowl/registerCustomerCompletion         =>  controllers.CustomerController.registerCustomerCompletion()
+10:37:42.273 [NinjaJetty] INFO  ninja.RouterImpl - GET  /exhibition                                   =>  controllers.ExhibitionController.list()
+10:37:42.274 [NinjaJetty] INFO  ninja.RouterImpl - GET  /registerExhibition                           =>  controllers.ExhibitionController.registerExhibition()
+10:37:42.274 [NinjaJetty] INFO  ninja.RouterImpl - POST /registerExhibition                           =>  controllers.ExhibitionController.registerExhibition()
+10:37:42.274 [NinjaJetty] INFO  ninja.RouterImpl - POST /registerExhibitionConfirmation               =>  controllers.ExhibitionController.registerExhibitionConfirmation()
+10:37:42.275 [NinjaJetty] INFO  ninja.RouterImpl - POST /registerExhibitionCompletion                 =>  controllers.ExhibitionController.registerExhibitionCompletion()
+10:37:42.275 [NinjaJetty] INFO  ninja.RouterImpl - GET  /superbowl/exhibition                         =>  controllers.ExhibitionController.list()
+10:37:42.275 [NinjaJetty] INFO  ninja.RouterImpl - GET  /superbowl/registerExhibition                 =>  controllers.ExhibitionController.registerExhibition()
+10:37:42.275 [NinjaJetty] INFO  ninja.RouterImpl - POST /superbowl/registerExhibition                 =>  controllers.ExhibitionController.registerExhibition()
+10:37:42.275 [NinjaJetty] INFO  ninja.RouterImpl - POST /superbowl/registerExhibitionConfirmation     =>  controllers.ExhibitionController.registerExhibitionConfirmation()
+10:37:42.275 [NinjaJetty] INFO  ninja.RouterImpl - POST /superbowl/registerExhibitionCompletion       =>  controllers.ExhibitionController.registerExhibitionCompletion()
+10:37:42.275 [NinjaJetty] INFO  ninja.RouterImpl - GET  /geoRegion                                    =>  controllers.GeoRegionController.list()
+10:37:42.275 [NinjaJetty] INFO  ninja.RouterImpl - GET  /superbowl/geoRegion                          =>  controllers.GeoRegionController.list()
+10:37:42.275 [NinjaJetty] INFO  ninja.RouterImpl - GET  /status                                       =>  controllers.StatusController.list()
+10:37:42.275 [NinjaJetty] INFO  ninja.RouterImpl - GET  /registerStatus                               =>  controllers.StatusController.registerStatus()
+10:37:42.275 [NinjaJetty] INFO  ninja.RouterImpl - POST /registerStatus                               =>  controllers.StatusController.registerStatus()
+10:37:42.275 [NinjaJetty] INFO  ninja.RouterImpl - POST /registerStatusConfirmation                   =>  controllers.StatusController.registerStatusConfirmation()
+10:37:42.276 [NinjaJetty] INFO  ninja.RouterImpl - POST /registerStatusCompletion                     =>  controllers.StatusController.registerStatusCompletion()
+10:37:42.276 [NinjaJetty] INFO  ninja.RouterImpl - GET  /superbowl/status                             =>  controllers.StatusController.list()
+10:37:42.276 [NinjaJetty] INFO  ninja.RouterImpl - GET  /superbowl/registerStatus                     =>  controllers.StatusController.registerStatus()
+10:37:42.276 [NinjaJetty] INFO  ninja.RouterImpl - POST /superbowl/registerStatus                     =>  controllers.StatusController.registerStatus()
+10:37:42.276 [NinjaJetty] INFO  ninja.RouterImpl - POST /superbowl/registerStatusConfirmation         =>  controllers.StatusController.registerStatusConfirmation()
+10:37:42.276 [NinjaJetty] INFO  ninja.RouterImpl - POST /superbowl/registerStatusCompletion           =>  controllers.StatusController.registerStatusCompletion()
+10:37:42.276 [NinjaJetty] INFO  ninja.RouterImpl - GET  /timber                                       =>  controllers.TimberController.list()
+10:37:42.276 [NinjaJetty] INFO  ninja.RouterImpl - GET  /registerTimber                               =>  controllers.TimberController.registerTimber()
+10:37:42.276 [NinjaJetty] INFO  ninja.RouterImpl - POST /registerTimber                               =>  controllers.TimberController.registerTimber()
+10:37:42.276 [NinjaJetty] INFO  ninja.RouterImpl - POST /registerTimberConfirmation                   =>  controllers.TimberController.registerTimberConfirmation()
+10:37:42.276 [NinjaJetty] INFO  ninja.RouterImpl - POST /registerTimberCompletion                     =>  controllers.TimberController.registerTimberCompletion()
+10:37:42.276 [NinjaJetty] INFO  ninja.RouterImpl - GET  /superbowl/timber                             =>  controllers.TimberController.list()
+10:37:42.276 [NinjaJetty] INFO  ninja.RouterImpl - GET  /superbowl/registerTimber                     =>  controllers.TimberController.registerTimber()
+10:37:42.276 [NinjaJetty] INFO  ninja.RouterImpl - POST /superbowl/registerTimber                     =>  controllers.TimberController.registerTimber()
+10:37:42.276 [NinjaJetty] INFO  ninja.RouterImpl - POST /superbowl/registerTimberConfirmation         =>  controllers.TimberController.registerTimberConfirmation()
+10:37:42.277 [NinjaJetty] INFO  ninja.RouterImpl - POST /superbowl/registerTimberCompletion           =>  controllers.TimberController.registerTimberCompletion()
+10:37:42.277 [NinjaJetty] INFO  ninja.RouterImpl - GET  /timberOrigin                                 =>  controllers.TimberOriginController.list()
+10:37:42.277 [NinjaJetty] INFO  ninja.RouterImpl - GET  /registerTimberOrigin                         =>  controllers.TimberOriginController.registerTimberOrigin()
+10:37:42.277 [NinjaJetty] INFO  ninja.RouterImpl - POST /registerTimberOrigin                         =>  controllers.TimberOriginController.registerTimberOrigin()
+10:37:42.277 [NinjaJetty] INFO  ninja.RouterImpl - POST /registerTimberOriginConfirmation             =>  controllers.TimberOriginController.registerTimberOriginConfirmation()
+10:37:42.277 [NinjaJetty] INFO  ninja.RouterImpl - POST /registerTimberOriginCompletion               =>  controllers.TimberOriginController.registerTimberOriginCompletion()
+10:37:42.277 [NinjaJetty] INFO  ninja.RouterImpl - GET  /superbowl/timberOrigin                       =>  controllers.TimberOriginController.list()
+10:37:42.277 [NinjaJetty] INFO  ninja.RouterImpl - GET  /superbowl/registerTimberOrigin               =>  controllers.TimberOriginController.registerTimberOrigin()
+10:37:42.277 [NinjaJetty] INFO  ninja.RouterImpl - POST /superbowl/registerTimberOrigin               =>  controllers.TimberOriginController.registerTimberOrigin()
+10:37:42.282 [NinjaJetty] INFO  ninja.RouterImpl - POST /superbowl/registerTimberOriginConfirmation   =>  controllers.TimberOriginController.registerTimberOriginConfirmation()
+10:37:42.282 [NinjaJetty] INFO  ninja.RouterImpl - POST /superbowl/registerTimberOriginCompletion     =>  controllers.TimberOriginController.registerTimberOriginCompletion()
+10:37:42.282 [NinjaJetty] INFO  ninja.RouterImpl - GET  /assets/webjars/{fileName: .*}                =>  ninja.AssetsController.serveWebJars()
+10:37:42.286 [NinjaJetty] INFO  ninja.RouterImpl - GET  /assets/{fileName: .*}                        =>  ninja.AssetsController.serveStatic()
+10:37:42.287 [NinjaJetty] INFO  ninja.NinjaDefault - 
+ _______  .___ _______        ____.  _____   
+ \      \ |   |\      \      |    | /  _  \  
+ /   |   \|   |/   |   \     |    |/  /_\  \ 
+/    |    \   /    |    \/\__|    /    |    \  http://www.ninjaframework.org
+\____|__  /___\____|__  /\________\____|__  /  @ninjaframework
+     web\/framework   \/                  \/   6.1.0
+
+10:37:42.288 [NinjaJetty] INFO  ninja.lifecycle.LifecycleServiceImpl - Starting Ninja application...
+10:37:42.478 [NinjaJetty] WARN  o.hibernate.ejb.HibernatePersistence - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+10:37:42.479 [NinjaJetty] WARN  o.hibernate.ejb.HibernatePersistence - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+10:37:42.486 [NinjaJetty] WARN  o.hibernate.ejb.HibernatePersistence - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+10:37:43.734 [NinjaJetty] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: superbowlDS
+	...]
+10:37:44.185 [NinjaJetty] INFO  org.hibernate.Version - HHH000412: Hibernate Core {4.3.8.Final}
+10:37:44.187 [NinjaJetty] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+10:37:44.202 [NinjaJetty] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+10:37:55.020 [NinjaJetty] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+10:37:55.196 [NinjaJetty] INFO  o.h.c.i.C3P0ConnectionProvider - HHH010002: C3P0 using driver: org.h2.Driver at URL: jdbc:h2:tcp://localhost:9092//opt/h2/store/superbowl/superbowlDB;ifexists=true
+10:37:55.197 [NinjaJetty] INFO  o.h.c.i.C3P0ConnectionProvider - HHH000046: Connection properties: {user=sa, password=****}
+10:37:55.197 [NinjaJetty] INFO  o.h.c.i.C3P0ConnectionProvider - HHH000006: Autocommit mode: false
+10:37:55.225 [NinjaJetty] INFO  com.mchange.v2.log.MLog - MLog clients using log4j logging.
+10:37:55.575 [NinjaJetty] INFO  com.mchange.v2.c3p0.C3P0Registry - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+10:37:55.704 [NinjaJetty] INFO  c.m.v.c.i.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@da38ef4 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@190f5a0f [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kfsx9v1ebf0l31tmqf0a|29c848, idleConnectionTestPeriod -> 2000, initialPoolSize -> 5, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 500, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 20, maxStatements -> 50, maxStatementsPerConnection -> 0, minPoolSize -> 5, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@4f97e69b [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> z8kfsx9v1ebf0l31tmqf0a|1068335, jdbcUrl -> jdbc:h2:tcp://localhost:9092//opt/h2/store/superbowl/superbowlDB;ifexists=true, properties -> {user=******, password=******} ], preferredTestQuery -> null, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> z8kfsx9v1ebf0l31tmqf0a|914623, numHelperThreads -> 3 ]
+10:39:04.708 [C3P0PooledConnectionPoolManager[identityToken->z8kfsx9v1ebf0l31tmqf0a|914623]-HelperThread-#2] WARN  c.m.v.resourcepool.BasicResourcePool - com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@17fa6e9 -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (30). Last acquisition attempt exception: 
+org.h2.jdbc.JdbcSQLException: Verbindung ist unterbrochen: "java.net.ConnectException: Verbindungsaufbau abgelehnt (Connection refused): localhost:9092"
+Connection is broken: "java.net.ConnectException: Verbindungsaufbau abgelehnt (Connection refused): localhost:9092" [90067-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345) ~[superbowl.jar:na]
+	at org.h2.message.DbException.get(DbException.java:168) ~[superbowl.jar:na]
+	at org.h2.engine.SessionRemote.connectServer(SessionRemote.java:452) ~[superbowl.jar:na]
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:329) ~[superbowl.jar:na]
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:115) ~[superbowl.jar:na]
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99) ~[superbowl.jar:na]
+	at org.h2.Driver.connect(Driver.java:69) ~[superbowl.jar:na]
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:146) ~[superbowl.jar:na]
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:195) ~[superbowl.jar:na]
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:184) ~[superbowl.jar:na]
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:200) ~[superbowl.jar:na]
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1086) ~[superbowl.jar:na]
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1073) ~[superbowl.jar:na]
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:44) ~[superbowl.jar:na]
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1810) ~[superbowl.jar:na]
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:648) [superbowl.jar:na]
+Caused by: java.net.ConnectException: Verbindungsaufbau abgelehnt (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_171]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_171]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_171]
+	at org.h2.util.NetUtils.createSocket(NetUtils.java:122) ~[superbowl.jar:na]
+	at org.h2.util.NetUtils.createSocket(NetUtils.java:102) ~[superbowl.jar:na]
+	at org.h2.engine.SessionRemote.initTransfer(SessionRemote.java:114) ~[superbowl.jar:na]
+	at org.h2.engine.SessionRemote.connectServer(SessionRemote.java:448) ~[superbowl.jar:na]
+	... 13 common frames omitted
+10:39:04.708 [C3P0PooledConnectionPoolManager[identityToken->z8kfsx9v1ebf0l31tmqf0a|914623]-HelperThread-#2] WARN  c.m.v.resourcepool.BasicResourcePool - Having failed to acquire a resource, com.mchange.v2.resourcepool.BasicResourcePool@105d1b is interrupting all Threads waiting on a resource to check out. Will try again in response to new client requests.
+10:39:04.717 [NinjaJetty] WARN  o.h.e.jdbc.internal.JdbcServicesImpl - HHH000342: Could not obtain connection to query metadata : Connections could not be acquired from the underlying database!
+10:39:04.734 [NinjaJetty] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+10:39:04.772 [NinjaJetty] INFO  o.h.e.j.internal.LobCreatorBuilder - HHH000422: Disabling contextual LOB creation as connection was null
+10:39:04.982 [C3P0PooledConnectionPoolManager[identityToken->z8kfsx9v1ebf0l31tmqf0a|914623]-HelperThread-#0] WARN  c.m.v.resourcepool.BasicResourcePool - com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@4f9228 -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (30). Last acquisition attempt exception: 
+org.h2.jdbc.JdbcSQLException: Verbindung ist unterbrochen: "java.net.ConnectException: Verbindungsaufbau abgelehnt (Connection refused): localhost:9092"
+Connection is broken: "java.net.ConnectException: Verbindungsaufbau abgelehnt (Connection refused): localhost:9092" [90067-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345) ~[superbowl.jar:na]
+	at org.h2.message.DbException.get(DbException.java:168) ~[superbowl.jar:na]
+	at org.h2.engine.SessionRemote.connectServer(SessionRemote.java:452) ~[superbowl.jar:na]
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:329) ~[superbowl.jar:na]
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:115) ~[superbowl.jar:na]
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99) ~[superbowl.jar:na]
+	at org.h2.Driver.connect(Driver.java:69) ~[superbowl.jar:na]
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:146) ~[superbowl.jar:na]
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:195) ~[superbowl.jar:na]
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:184) ~[superbowl.jar:na]
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:200) ~[superbowl.jar:na]
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1086) ~[superbowl.jar:na]
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1073) ~[superbowl.jar:na]
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:44) ~[superbowl.jar:na]
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1810) ~[superbowl.jar:na]
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:648) [superbowl.jar:na]
+Caused by: java.net.ConnectException: Verbindungsaufbau abgelehnt (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_171]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_171]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_171]
+	at org.h2.util.NetUtils.createSocket(NetUtils.java:122) ~[superbowl.jar:na]
+	at org.h2.util.NetUtils.createSocket(NetUtils.java:102) ~[superbowl.jar:na]
+	at org.h2.engine.SessionRemote.initTransfer(SessionRemote.java:114) ~[superbowl.jar:na]
+	at org.h2.engine.SessionRemote.connectServer(SessionRemote.java:448) ~[superbowl.jar:na]
+	... 13 common frames omitted
+10:39:04.982 [C3P0PooledConnectionPoolManager[identityToken->z8kfsx9v1ebf0l31tmqf0a|914623]-HelperThread-#0] WARN  c.m.v.resourcepool.BasicResourcePool - Having failed to acquire a resource, com.mchange.v2.resourcepool.BasicResourcePool@105d1b is interrupting all Threads waiting on a resource to check out. Will try again in response to new client requests.
+10:39:05.232 [C3P0PooledConnectionPoolManager[identityToken->z8kfsx9v1ebf0l31tmqf0a|914623]-HelperThread-#1] WARN  c.m.v.resourcepool.BasicResourcePool - com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@1acb8ba -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (30). Last acquisition attempt exception: 
+org.h2.jdbc.JdbcSQLException: Verbindung ist unterbrochen: "java.net.ConnectException: Verbindungsaufbau abgelehnt (Connection refused): localhost:9092"
+Connection is broken: "java.net.ConnectException: Verbindungsaufbau abgelehnt (Connection refused): localhost:9092" [90067-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345) ~[superbowl.jar:na]
+	at org.h2.message.DbException.get(DbException.java:168) ~[superbowl.jar:na]
+	at org.h2.engine.SessionRemote.connectServer(SessionRemote.java:452) ~[superbowl.jar:na]
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:329) ~[superbowl.jar:na]
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:115) ~[superbowl.jar:na]
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99) ~[superbowl.jar:na]
+	at org.h2.Driver.connect(Driver.java:69) ~[superbowl.jar:na]
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:146) ~[superbowl.jar:na]
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:195) ~[superbowl.jar:na]
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:184) ~[superbowl.jar:na]
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:200) ~[superbowl.jar:na]
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1086) ~[superbowl.jar:na]
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1073) ~[superbowl.jar:na]
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:44) ~[superbowl.jar:na]
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1810) ~[superbowl.jar:na]
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:648) [superbowl.jar:na]
+Caused by: java.net.ConnectException: Verbindungsaufbau abgelehnt (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_171]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_171]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_171]
+	at org.h2.util.NetUtils.createSocket(NetUtils.java:122) ~[superbowl.jar:na]
+	at org.h2.util.NetUtils.createSocket(NetUtils.java:102) ~[superbowl.jar:na]
+	at org.h2.engine.SessionRemote.initTransfer(SessionRemote.java:114) ~[superbowl.jar:na]
+	at org.h2.engine.SessionRemote.connectServer(SessionRemote.java:448) ~[superbowl.jar:na]
+	... 13 common frames omitted
+10:39:05.233 [C3P0PooledConnectionPoolManager[identityToken->z8kfsx9v1ebf0l31tmqf0a|914623]-HelperThread-#1] WARN  c.m.v.resourcepool.BasicResourcePool - Having failed to acquire a resource, com.mchange.v2.resourcepool.BasicResourcePool@105d1b is interrupting all Threads waiting on a resource to check out. Will try again in response to new client requests.
+10:39:05.407 [NinjaJetty] INFO  o.h.h.i.a.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory
+10:39:05.500 [NinjaJetty] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 4.3.1.Final
+10:39:05.987 [C3P0PooledConnectionPoolManager[identityToken->z8kfsx9v1ebf0l31tmqf0a|914623]-HelperThread-#2] WARN  c.m.v.resourcepool.BasicResourcePool - com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@1c5af79 -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (30). Last acquisition attempt exception: 
+org.h2.jdbc.JdbcSQLException: Verbindung ist unterbrochen: "java.net.ConnectException: Verbindungsaufbau abgelehnt (Connection refused): localhost:9092"
+Connection is broken: "java.net.ConnectException: Verbindungsaufbau abgelehnt (Connection refused): localhost:9092" [90067-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345) ~[superbowl.jar:na]
+	at org.h2.message.DbException.get(DbException.java:168) ~[superbowl.jar:na]
+	at org.h2.engine.SessionRemote.connectServer(SessionRemote.java:452) ~[superbowl.jar:na]
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:329) ~[superbowl.jar:na]
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:115) ~[superbowl.jar:na]
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99) ~[superbowl.jar:na]
+	at org.h2.Driver.connect(Driver.java:69) ~[superbowl.jar:na]
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:146) ~[superbowl.jar:na]
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:195) ~[superbowl.jar:na]
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:184) ~[superbowl.jar:na]
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:200) ~[superbowl.jar:na]
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1086) ~[superbowl.jar:na]
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1073) ~[superbowl.jar:na]
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:44) ~[superbowl.jar:na]
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1810) ~[superbowl.jar:na]
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:648) [superbowl.jar:na]
+Caused by: java.net.ConnectException: Verbindungsaufbau abgelehnt (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_171]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_171]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_171]
+	at org.h2.util.NetUtils.createSocket(NetUtils.java:122) ~[superbowl.jar:na]
+	at org.h2.util.NetUtils.createSocket(NetUtils.java:102) ~[superbowl.jar:na]
+	at org.h2.engine.SessionRemote.initTransfer(SessionRemote.java:114) ~[superbowl.jar:na]
+	at org.h2.engine.SessionRemote.connectServer(SessionRemote.java:448) ~[superbowl.jar:na]
+	... 13 common frames omitted
+10:39:05.987 [C3P0PooledConnectionPoolManager[identityToken->z8kfsx9v1ebf0l31tmqf0a|914623]-HelperThread-#2] WARN  c.m.v.resourcepool.BasicResourcePool - Having failed to acquire a resource, com.mchange.v2.resourcepool.BasicResourcePool@105d1b is interrupting all Threads waiting on a resource to check out. Will try again in response to new client requests.
+10:39:06.249 [C3P0PooledConnectionPoolManager[identityToken->z8kfsx9v1ebf0l31tmqf0a|914623]-HelperThread-#0] WARN  c.m.v.resourcepool.BasicResourcePool - com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@330cd9 -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (30). Last acquisition attempt exception: 
+org.h2.jdbc.JdbcSQLException: Verbindung ist unterbrochen: "java.net.ConnectException: Verbindungsaufbau abgelehnt (Connection refused): localhost:9092"
+Connection is broken: "java.net.ConnectException: Verbindungsaufbau abgelehnt (Connection refused): localhost:9092" [90067-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345) ~[superbowl.jar:na]
+	at org.h2.message.DbException.get(DbException.java:168) ~[superbowl.jar:na]
+	at org.h2.engine.SessionRemote.connectServer(SessionRemote.java:452) ~[superbowl.jar:na]
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:329) ~[superbowl.jar:na]
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:115) ~[superbowl.jar:na]
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99) ~[superbowl.jar:na]
+	at org.h2.Driver.connect(Driver.java:69) ~[superbowl.jar:na]
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:146) ~[superbowl.jar:na]
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:195) ~[superbowl.jar:na]
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:184) ~[superbowl.jar:na]
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:200) ~[superbowl.jar:na]
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1086) ~[superbowl.jar:na]
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1073) ~[superbowl.jar:na]
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:44) ~[superbowl.jar:na]
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1810) ~[superbowl.jar:na]
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:648) [superbowl.jar:na]
+Caused by: java.net.ConnectException: Verbindungsaufbau abgelehnt (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_171]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_171]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_171]
+	at org.h2.util.NetUtils.createSocket(NetUtils.java:122) ~[superbowl.jar:na]
+	at org.h2.util.NetUtils.createSocket(NetUtils.java:102) ~[superbowl.jar:na]
+	at org.h2.engine.SessionRemote.initTransfer(SessionRemote.java:114) ~[superbowl.jar:na]
+	at org.h2.engine.SessionRemote.connectServer(SessionRemote.java:448) ~[superbowl.jar:na]
+	... 13 common frames omitted
+10:39:06.252 [C3P0PooledConnectionPoolManager[identityToken->z8kfsx9v1ebf0l31tmqf0a|914623]-HelperThread-#0] WARN  c.m.v.resourcepool.BasicResourcePool - Having failed to acquire a resource, com.mchange.v2.resourcepool.BasicResourcePool@105d1b is interrupting all Threads waiting on a resource to check out. Will try again in response to new client requests.
+10:39:07.448 [NinjaJetty] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
+10:39:07.454 [NinjaJetty] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000102: Fetching database metadata
+10:40:16.142 [C3P0PooledConnectionPoolManager[identityToken->z8kfsx9v1ebf0l31tmqf0a|914623]-HelperThread-#2] WARN  c.m.v.resourcepool.BasicResourcePool - com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@13999fb -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (30). Last acquisition attempt exception: 
+org.h2.jdbc.JdbcSQLException: Verbindung ist unterbrochen: "java.net.ConnectException: Verbindungsaufbau abgelehnt (Connection refused): localhost:9092"
+Connection is broken: "java.net.ConnectException: Verbindungsaufbau abgelehnt (Connection refused): localhost:9092" [90067-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345) ~[superbowl.jar:na]
+	at org.h2.message.DbException.get(DbException.java:168) ~[superbowl.jar:na]
+	at org.h2.engine.SessionRemote.connectServer(SessionRemote.java:452) ~[superbowl.jar:na]
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:329) ~[superbowl.jar:na]
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:115) ~[superbowl.jar:na]
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99) ~[superbowl.jar:na]
+	at org.h2.Driver.connect(Driver.java:69) ~[superbowl.jar:na]
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:146) ~[superbowl.jar:na]
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:195) ~[superbowl.jar:na]
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:184) ~[superbowl.jar:na]
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:200) ~[superbowl.jar:na]
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1086) ~[superbowl.jar:na]
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1073) ~[superbowl.jar:na]
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:44) ~[superbowl.jar:na]
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1810) ~[superbowl.jar:na]
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:648) [superbowl.jar:na]
+Caused by: java.net.ConnectException: Verbindungsaufbau abgelehnt (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_171]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_171]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_171]
+	at org.h2.util.NetUtils.createSocket(NetUtils.java:122) ~[superbowl.jar:na]
+	at org.h2.util.NetUtils.createSocket(NetUtils.java:102) ~[superbowl.jar:na]
+	at org.h2.engine.SessionRemote.initTransfer(SessionRemote.java:114) ~[superbowl.jar:na]
+	at org.h2.engine.SessionRemote.connectServer(SessionRemote.java:448) ~[superbowl.jar:na]
+	... 13 common frames omitted
+10:40:16.143 [C3P0PooledConnectionPoolManager[identityToken->z8kfsx9v1ebf0l31tmqf0a|914623]-HelperThread-#2] WARN  c.m.v.resourcepool.BasicResourcePool - Having failed to acquire a resource, com.mchange.v2.resourcepool.BasicResourcePool@105d1b is interrupting all Threads waiting on a resource to check out. Will try again in response to new client requests.
+10:40:16.147 [NinjaJetty] ERROR o.h.tool.hbm2ddl.SchemaUpdate - HHH000319: Could not get database metadata
+java.sql.SQLException: Connections could not be acquired from the underlying database!
+	at com.mchange.v2.sql.SqlUtils.toSQLException(SqlUtils.java:118) ~[superbowl.jar:na]
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool.checkoutPooledConnection(C3P0PooledConnectionPool.java:689) ~[superbowl.jar:na]
+	at com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource.getConnection(AbstractPoolBackedDataSource.java:140) ~[superbowl.jar:na]
+	at org.hibernate.c3p0.internal.C3P0ConnectionProvider.getConnection(C3P0ConnectionProvider.java:90) ~[superbowl.jar:na]
+	at org.hibernate.tool.hbm2ddl.SuppliedConnectionProviderConnectionHelper.prepare(SuppliedConnectionProviderConnectionHelper.java:51) ~[superbowl.jar:na]
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:219) ~[superbowl.jar:na]
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:203) ~[superbowl.jar:na]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:522) ~[superbowl.jar:na]
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1859) ~[superbowl.jar:na]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl$4.perform(EntityManagerFactoryBuilderImpl.java:852) [superbowl.jar:na]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl$4.perform(EntityManagerFactoryBuilderImpl.java:845) [superbowl.jar:na]
+	at org.hibernate.boot.registry.classloading.internal.ClassLoaderServiceImpl.withTccl(ClassLoaderServiceImpl.java:398) [superbowl.jar:na]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:844) [superbowl.jar:na]
+	at org.hibernate.jpa.HibernatePersistenceProvider.createEntityManagerFactory(HibernatePersistenceProvider.java:75) [superbowl.jar:na]
+	at org.hibernate.ejb.HibernatePersistence.createEntityManagerFactory(HibernatePersistence.java:54) [superbowl.jar:na]
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:55) [superbowl.jar:na]
+	at com.google.inject.persist.jpa.JpaPersistService.start(JpaPersistService.java:108) [superbowl.jar:na]
+	at ninja.jpa.JpaInitializer.start(JpaInitializer.java:52) [superbowl.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_171]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_171]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_171]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_171]
+	at ninja.lifecycle.LifecycleRegister.invokeTarget(LifecycleRegister.java:96) [superbowl.jar:na]
+	at ninja.lifecycle.LifecycleRegister.start(LifecycleRegister.java:55) [superbowl.jar:na]
+	at ninja.lifecycle.LifecycleServiceImpl.start(LifecycleServiceImpl.java:84) [superbowl.jar:na]
+	at ninja.NinjaDefault.onFrameworkStart(NinjaDefault.java:149) [superbowl.jar:na]
+	at ninja.Bootstrap.boot(Bootstrap.java:119) [superbowl.jar:na]
+	at ninja.servlet.NinjaServletListener.createNinjaBootstrap(NinjaServletListener.java:131) [superbowl.jar:na]
+	at ninja.servlet.NinjaServletListener.getInjector(NinjaServletListener.java:109) [superbowl.jar:na]
+	at com.google.inject.servlet.GuiceServletContextListener.contextInitialized(GuiceServletContextListener.java:47) [superbowl.jar:na]
+	at ninja.servlet.NinjaServletListener.contextInitialized(NinjaServletListener.java:61) [superbowl.jar:na]
+	at org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized(ContextHandler.java:843) [superbowl.jar:na]
+	at org.eclipse.jetty.servlet.ServletContextHandler.callContextInitialized(ServletContextHandler.java:533) [superbowl.jar:na]
+	at org.eclipse.jetty.server.handler.ContextHandler.startContext(ContextHandler.java:816) [superbowl.jar:na]
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:345) [superbowl.jar:na]
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:778) [superbowl.jar:na]
+	at org.eclipse.jetty.servlet.ServletContextHandler.doStart(ServletContextHandler.java:262) [superbowl.jar:na]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68) [superbowl.jar:na]
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:132) [superbowl.jar:na]
+	at org.eclipse.jetty.server.Server.start(Server.java:411) [superbowl.jar:na]
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:106) [superbowl.jar:na]
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:61) [superbowl.jar:na]
+	at org.eclipse.jetty.server.Server.doStart(Server.java:378) [superbowl.jar:na]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68) [superbowl.jar:na]
+	at ninja.standalone.NinjaJetty.doStart(NinjaJetty.java:161) [superbowl.jar:na]
+	at ninja.standalone.AbstractStandalone.start(AbstractStandalone.java:201) [superbowl.jar:na]
+	at ninja.standalone.AbstractStandalone.run(AbstractStandalone.java:98) [superbowl.jar:na]
+	at ninja.standalone.NinjaJetty.main(NinjaJetty.java:69) [superbowl.jar:na]
+Caused by: com.mchange.v2.resourcepool.CannotAcquireResourceException: A ResourcePool could not acquire a resource from its primary factory or source.
+	at com.mchange.v2.resourcepool.BasicResourcePool.awaitAvailable(BasicResourcePool.java:1418) ~[superbowl.jar:na]
+	at com.mchange.v2.resourcepool.BasicResourcePool.prelimCheckoutResource(BasicResourcePool.java:606) ~[superbowl.jar:na]
+	at com.mchange.v2.resourcepool.BasicResourcePool.checkoutResource(BasicResourcePool.java:526) ~[superbowl.jar:na]
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool.checkoutAndMarkConnectionInUse(C3P0PooledConnectionPool.java:755) ~[superbowl.jar:na]
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool.checkoutPooledConnection(C3P0PooledConnectionPool.java:682) ~[superbowl.jar:na]
+	... 46 common frames omitted
+10:40:16.152 [NinjaJetty] ERROR o.h.tool.hbm2ddl.SchemaUpdate - HHH000299: Could not complete schema update
+java.sql.SQLException: Connections could not be acquired from the underlying database!
+	at com.mchange.v2.sql.SqlUtils.toSQLException(SqlUtils.java:118) ~[superbowl.jar:na]
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool.checkoutPooledConnection(C3P0PooledConnectionPool.java:689) ~[superbowl.jar:na]
+	at com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource.getConnection(AbstractPoolBackedDataSource.java:140) ~[superbowl.jar:na]
+	at org.hibernate.c3p0.internal.C3P0ConnectionProvider.getConnection(C3P0ConnectionProvider.java:90) ~[superbowl.jar:na]
+	at org.hibernate.tool.hbm2ddl.SuppliedConnectionProviderConnectionHelper.prepare(SuppliedConnectionProviderConnectionHelper.java:51) ~[superbowl.jar:na]
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:219) ~[superbowl.jar:na]
+	at org.hibernate.tool.hbm2ddl.SchemaUpdate.execute(SchemaUpdate.java:203) ~[superbowl.jar:na]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:522) ~[superbowl.jar:na]
+	at org.hibernate.cfg.Configuration.buildSessionFactory(Configuration.java:1859) ~[superbowl.jar:na]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl$4.perform(EntityManagerFactoryBuilderImpl.java:852) [superbowl.jar:na]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl$4.perform(EntityManagerFactoryBuilderImpl.java:845) [superbowl.jar:na]
+	at org.hibernate.boot.registry.classloading.internal.ClassLoaderServiceImpl.withTccl(ClassLoaderServiceImpl.java:398) [superbowl.jar:na]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:844) [superbowl.jar:na]
+	at org.hibernate.jpa.HibernatePersistenceProvider.createEntityManagerFactory(HibernatePersistenceProvider.java:75) [superbowl.jar:na]
+	at org.hibernate.ejb.HibernatePersistence.createEntityManagerFactory(HibernatePersistence.java:54) [superbowl.jar:na]
+	at javax.persistence.Persistence.createEntityManagerFactory(Persistence.java:55) [superbowl.jar:na]
+	at com.google.inject.persist.jpa.JpaPersistService.start(JpaPersistService.java:108) [superbowl.jar:na]
+	at ninja.jpa.JpaInitializer.start(JpaInitializer.java:52) [superbowl.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_171]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_171]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_171]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_171]
+	at ninja.lifecycle.LifecycleRegister.invokeTarget(LifecycleRegister.java:96) [superbowl.jar:na]
+	at ninja.lifecycle.LifecycleRegister.start(LifecycleRegister.java:55) [superbowl.jar:na]
+	at ninja.lifecycle.LifecycleServiceImpl.start(LifecycleServiceImpl.java:84) [superbowl.jar:na]
+	at ninja.NinjaDefault.onFrameworkStart(NinjaDefault.java:149) [superbowl.jar:na]
+	at ninja.Bootstrap.boot(Bootstrap.java:119) [superbowl.jar:na]
+	at ninja.servlet.NinjaServletListener.createNinjaBootstrap(NinjaServletListener.java:131) [superbowl.jar:na]
+	at ninja.servlet.NinjaServletListener.getInjector(NinjaServletListener.java:109) [superbowl.jar:na]
+	at com.google.inject.servlet.GuiceServletContextListener.contextInitialized(GuiceServletContextListener.java:47) [superbowl.jar:na]
+	at ninja.servlet.NinjaServletListener.contextInitialized(NinjaServletListener.java:61) [superbowl.jar:na]
+	at org.eclipse.jetty.server.handler.ContextHandler.callContextInitialized(ContextHandler.java:843) [superbowl.jar:na]
+	at org.eclipse.jetty.servlet.ServletContextHandler.callContextInitialized(ServletContextHandler.java:533) [superbowl.jar:na]
+	at org.eclipse.jetty.server.handler.ContextHandler.startContext(ContextHandler.java:816) [superbowl.jar:na]
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:345) [superbowl.jar:na]
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:778) [superbowl.jar:na]
+	at org.eclipse.jetty.servlet.ServletContextHandler.doStart(ServletContextHandler.java:262) [superbowl.jar:na]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68) [superbowl.jar:na]
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:132) [superbowl.jar:na]
+	at org.eclipse.jetty.server.Server.start(Server.java:411) [superbowl.jar:na]
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:106) [superbowl.jar:na]
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:61) [superbowl.jar:na]
+	at org.eclipse.jetty.server.Server.doStart(Server.java:378) [superbowl.jar:na]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68) [superbowl.jar:na]
+	at ninja.standalone.NinjaJetty.doStart(NinjaJetty.java:161) [superbowl.jar:na]
+	at ninja.standalone.AbstractStandalone.start(AbstractStandalone.java:201) [superbowl.jar:na]
+	at ninja.standalone.AbstractStandalone.run(AbstractStandalone.java:98) [superbowl.jar:na]
+	at ninja.standalone.NinjaJetty.main(NinjaJetty.java:69) [superbowl.jar:na]
+Caused by: com.mchange.v2.resourcepool.CannotAcquireResourceException: A ResourcePool could not acquire a resource from its primary factory or source.
+	at com.mchange.v2.resourcepool.BasicResourcePool.awaitAvailable(BasicResourcePool.java:1418) ~[superbowl.jar:na]
+	at com.mchange.v2.resourcepool.BasicResourcePool.prelimCheckoutResource(BasicResourcePool.java:606) ~[superbowl.jar:na]
+	at com.mchange.v2.resourcepool.BasicResourcePool.checkoutResource(BasicResourcePool.java:526) ~[superbowl.jar:na]
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool.checkoutAndMarkConnectionInUse(C3P0PooledConnectionPool.java:755) ~[superbowl.jar:na]
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool.checkoutPooledConnection(C3P0PooledConnectionPool.java:682) ~[superbowl.jar:na]
+	... 46 common frames omitted
+10:40:16.294 [NinjaJetty] WARN  Ninja - StartupActions:generateDummyDataWhenInTest -> ninjaProperties.isDev() : false
+10:40:16.294 [NinjaJetty] WARN  Ninja - StartupActions:generateDummyDataWhenInTest -> ninjaProperties.isProd(): true
+10:40:16.295 [NinjaJetty] WARN  Ninja - StartupActions:generateDummyDataWhenInTest -> ninjaProperties.isTest(): false
+10:40:16.295 [NinjaJetty] INFO  ninja.lifecycle.LifecycleServiceImpl - Ninja application started in 154007ms
+10:40:16.330 [NinjaJetty] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@1d623b2{/,null,AVAILABLE}
+10:40:16.395 [C3P0PooledConnectionPoolManager[identityToken->z8kfsx9v1ebf0l31tmqf0a|914623]-HelperThread-#0] WARN  c.m.v.resourcepool.BasicResourcePool - com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@c73ddf -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (30). Last acquisition attempt exception: 
+org.h2.jdbc.JdbcSQLException: Verbindung ist unterbrochen: "java.net.ConnectException: Verbindungsaufbau abgelehnt (Connection refused): localhost:9092"
+Connection is broken: "java.net.ConnectException: Verbindungsaufbau abgelehnt (Connection refused): localhost:9092" [90067-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345) ~[superbowl.jar:na]
+	at org.h2.message.DbException.get(DbException.java:168) ~[superbowl.jar:na]
+	at org.h2.engine.SessionRemote.connectServer(SessionRemote.java:452) ~[superbowl.jar:na]
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:329) ~[superbowl.jar:na]
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:115) ~[superbowl.jar:na]
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99) ~[superbowl.jar:na]
+	at org.h2.Driver.connect(Driver.java:69) ~[superbowl.jar:na]
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:146) ~[superbowl.jar:na]
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:195) ~[superbowl.jar:na]
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:184) ~[superbowl.jar:na]
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:200) ~[superbowl.jar:na]
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1086) ~[superbowl.jar:na]
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1073) ~[superbowl.jar:na]
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:44) ~[superbowl.jar:na]
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1810) ~[superbowl.jar:na]
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:648) [superbowl.jar:na]
+Caused by: java.net.ConnectException: Verbindungsaufbau abgelehnt (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_171]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_171]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_171]
+	at org.h2.util.NetUtils.createSocket(NetUtils.java:122) ~[superbowl.jar:na]
+	at org.h2.util.NetUtils.createSocket(NetUtils.java:102) ~[superbowl.jar:na]
+	at org.h2.engine.SessionRemote.initTransfer(SessionRemote.java:114) ~[superbowl.jar:na]
+	at org.h2.engine.SessionRemote.connectServer(SessionRemote.java:448) ~[superbowl.jar:na]
+	... 13 common frames omitted
+10:40:16.396 [C3P0PooledConnectionPoolManager[identityToken->z8kfsx9v1ebf0l31tmqf0a|914623]-HelperThread-#0] WARN  c.m.v.resourcepool.BasicResourcePool - Having failed to acquire a resource, com.mchange.v2.resourcepool.BasicResourcePool@105d1b is interrupting all Threads waiting on a resource to check out. Will try again in response to new client requests.
+10:40:16.401 [NinjaJetty] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@1a3f892{HTTP/1.1,[http/1.1]}{0.0.0.0:9000}
+10:40:16.402 [NinjaJetty] INFO  org.eclipse.jetty.server.Server - Started @166208ms
+10:40:16.402 [NinjaJetty] INFO  ninja.standalone.NinjaJetty - Started jetty vnull on <all>:9000
+10:40:16.402 [NinjaJetty] INFO  ninja.standalone.NinjaJetty - -------------------------------------------------------
+10:40:16.402 [NinjaJetty] INFO  ninja.standalone.NinjaJetty - Ninja application running at
+10:40:16.403 [NinjaJetty] INFO  ninja.standalone.NinjaJetty -  => http://localhost:9000
+10:40:16.403 [NinjaJetty] INFO  ninja.standalone.NinjaJetty - -------------------------------------------------------
+10:40:16.645 [C3P0PooledConnectionPoolManager[identityToken->z8kfsx9v1ebf0l31tmqf0a|914623]-HelperThread-#1] WARN  c.m.v.resourcepool.BasicResourcePool - com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@9574ac -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (30). Last acquisition attempt exception: 
+org.h2.jdbc.JdbcSQLException: Verbindung ist unterbrochen: "java.net.ConnectException: Verbindungsaufbau abgelehnt (Connection refused): localhost:9092"
+Connection is broken: "java.net.ConnectException: Verbindungsaufbau abgelehnt (Connection refused): localhost:9092" [90067-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345) ~[superbowl.jar:na]
+	at org.h2.message.DbException.get(DbException.java:168) ~[superbowl.jar:na]
+	at org.h2.engine.SessionRemote.connectServer(SessionRemote.java:452) ~[superbowl.jar:na]
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:329) ~[superbowl.jar:na]
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:115) ~[superbowl.jar:na]
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99) ~[superbowl.jar:na]
+	at org.h2.Driver.connect(Driver.java:69) ~[superbowl.jar:na]
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:146) ~[superbowl.jar:na]
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:195) ~[superbowl.jar:na]
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:184) ~[superbowl.jar:na]
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:200) ~[superbowl.jar:na]
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1086) ~[superbowl.jar:na]
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1073) ~[superbowl.jar:na]
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:44) ~[superbowl.jar:na]
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1810) ~[superbowl.jar:na]
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:648) [superbowl.jar:na]
+Caused by: java.net.ConnectException: Verbindungsaufbau abgelehnt (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_171]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_171]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_171]
+	at org.h2.util.NetUtils.createSocket(NetUtils.java:122) ~[superbowl.jar:na]
+	at org.h2.util.NetUtils.createSocket(NetUtils.java:102) ~[superbowl.jar:na]
+	at org.h2.engine.SessionRemote.initTransfer(SessionRemote.java:114) ~[superbowl.jar:na]
+	at org.h2.engine.SessionRemote.connectServer(SessionRemote.java:448) ~[superbowl.jar:na]
+	... 13 common frames omitted
+10:40:16.646 [C3P0PooledConnectionPoolManager[identityToken->z8kfsx9v1ebf0l31tmqf0a|914623]-HelperThread-#1] WARN  c.m.v.resourcepool.BasicResourcePool - Having failed to acquire a resource, com.mchange.v2.resourcepool.BasicResourcePool@105d1b is interrupting all Threads waiting on a resource to check out. Will try again in response to new client requests.
+10:40:17.400 [C3P0PooledConnectionPoolManager[identityToken->z8kfsx9v1ebf0l31tmqf0a|914623]-HelperThread-#2] WARN  c.m.v.resourcepool.BasicResourcePool - com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@1c5965a -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (30). Last acquisition attempt exception: 
+org.h2.jdbc.JdbcSQLException: Verbindung ist unterbrochen: "java.net.ConnectException: Verbindungsaufbau abgelehnt (Connection refused): localhost:9092"
+Connection is broken: "java.net.ConnectException: Verbindungsaufbau abgelehnt (Connection refused): localhost:9092" [90067-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345) ~[superbowl.jar:na]
+	at org.h2.message.DbException.get(DbException.java:168) ~[superbowl.jar:na]
+	at org.h2.engine.SessionRemote.connectServer(SessionRemote.java:452) ~[superbowl.jar:na]
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:329) ~[superbowl.jar:na]
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:115) ~[superbowl.jar:na]
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99) ~[superbowl.jar:na]
+	at org.h2.Driver.connect(Driver.java:69) ~[superbowl.jar:na]
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:146) ~[superbowl.jar:na]
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:195) ~[superbowl.jar:na]
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:184) ~[superbowl.jar:na]
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:200) ~[superbowl.jar:na]
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1086) ~[superbowl.jar:na]
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1073) ~[superbowl.jar:na]
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:44) ~[superbowl.jar:na]
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1810) ~[superbowl.jar:na]
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:648) [superbowl.jar:na]
+Caused by: java.net.ConnectException: Verbindungsaufbau abgelehnt (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_171]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_171]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_171]
+	at org.h2.util.NetUtils.createSocket(NetUtils.java:122) ~[superbowl.jar:na]
+	at org.h2.util.NetUtils.createSocket(NetUtils.java:102) ~[superbowl.jar:na]
+	at org.h2.engine.SessionRemote.initTransfer(SessionRemote.java:114) ~[superbowl.jar:na]
+	at org.h2.engine.SessionRemote.connectServer(SessionRemote.java:448) ~[superbowl.jar:na]
+	... 13 common frames omitted
+10:40:17.401 [C3P0PooledConnectionPoolManager[identityToken->z8kfsx9v1ebf0l31tmqf0a|914623]-HelperThread-#2] WARN  c.m.v.resourcepool.BasicResourcePool - Having failed to acquire a resource, com.mchange.v2.resourcepool.BasicResourcePool@105d1b is interrupting all Threads waiting on a resource to check out. Will try again in response to new client requests.
+10:40:17.646 [C3P0PooledConnectionPoolManager[identityToken->z8kfsx9v1ebf0l31tmqf0a|914623]-HelperThread-#0] WARN  c.m.v.resourcepool.BasicResourcePool - com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@1ab4c1d -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (30). Last acquisition attempt exception: 
+org.h2.jdbc.JdbcSQLException: Verbindung ist unterbrochen: "java.net.ConnectException: Verbindungsaufbau abgelehnt (Connection refused): localhost:9092"
+Connection is broken: "java.net.ConnectException: Verbindungsaufbau abgelehnt (Connection refused): localhost:9092" [90067-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345) ~[superbowl.jar:na]
+	at org.h2.message.DbException.get(DbException.java:168) ~[superbowl.jar:na]
+	at org.h2.engine.SessionRemote.connectServer(SessionRemote.java:452) ~[superbowl.jar:na]
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:329) ~[superbowl.jar:na]
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:115) ~[superbowl.jar:na]
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99) ~[superbowl.jar:na]
+	at org.h2.Driver.connect(Driver.java:69) ~[superbowl.jar:na]
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:146) ~[superbowl.jar:na]
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:195) ~[superbowl.jar:na]
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:184) ~[superbowl.jar:na]
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:200) ~[superbowl.jar:na]
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1086) ~[superbowl.jar:na]
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1073) ~[superbowl.jar:na]
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:44) ~[superbowl.jar:na]
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1810) ~[superbowl.jar:na]
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:648) [superbowl.jar:na]
+Caused by: java.net.ConnectException: Verbindungsaufbau abgelehnt (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_171]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_171]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_171]
+	at org.h2.util.NetUtils.createSocket(NetUtils.java:122) ~[superbowl.jar:na]
+	at org.h2.util.NetUtils.createSocket(NetUtils.java:102) ~[superbowl.jar:na]
+	at org.h2.engine.SessionRemote.initTransfer(SessionRemote.java:114) ~[superbowl.jar:na]
+	at org.h2.engine.SessionRemote.connectServer(SessionRemote.java:448) ~[superbowl.jar:na]
+	... 13 common frames omitted
+10:40:17.647 [C3P0PooledConnectionPoolManager[identityToken->z8kfsx9v1ebf0l31tmqf0a|914623]-HelperThread-#0] WARN  c.m.v.resourcepool.BasicResourcePool - Having failed to acquire a resource, com.mchange.v2.resourcepool.BasicResourcePool@105d1b is interrupting all Threads waiting on a resource to check out. Will try again in response to new client requests.
+10:41:19.117 [qtp13138721-12] INFO  Ninja - ApplicationController.index(context) 
+10:41:19.122 [qtp13138721-12] INFO  Ninja - ApplicationController -> ContextPath (Ninja Properties): 
+10:41:19.122 [qtp13138721-12] INFO  Ninja - ApplicationController -> ContextPath (Context).........: 
+10:42:38.922 [qtp13138721-14] INFO  Ninja - ApplicationController.index(context) 
+10:42:38.922 [qtp13138721-14] INFO  Ninja - ApplicationController -> ContextPath (Ninja Properties): 
+10:42:38.922 [qtp13138721-14] INFO  Ninja - ApplicationController -> ContextPath (Context).........: 
+10:42:39.115 [qtp13138721-15] ERROR ninja.AssetsController - error streaming file
+org.eclipse.jetty.io.EofException: null
+	at org.eclipse.jetty.io.ChannelEndPoint.flush(ChannelEndPoint.java:197) ~[superbowl.jar:na]
+	at org.eclipse.jetty.io.WriteFlusher.flush(WriteFlusher.java:420) ~[superbowl.jar:na]
+	at org.eclipse.jetty.io.WriteFlusher.write(WriteFlusher.java:313) ~[superbowl.jar:na]
+	at org.eclipse.jetty.io.AbstractEndPoint.write(AbstractEndPoint.java:140) ~[superbowl.jar:na]
+	at org.eclipse.jetty.server.HttpConnection$SendCallback.process(HttpConnection.java:741) ~[superbowl.jar:na]
+	at org.eclipse.jetty.util.IteratingCallback.processing(IteratingCallback.java:241) ~[superbowl.jar:na]
+	at org.eclipse.jetty.util.IteratingCallback.iterate(IteratingCallback.java:224) ~[superbowl.jar:na]
+	at org.eclipse.jetty.server.HttpConnection.send(HttpConnection.java:521) [superbowl.jar:na]
+	at org.eclipse.jetty.server.HttpChannel.sendResponse(HttpChannel.java:706) [superbowl.jar:na]
+	at org.eclipse.jetty.server.HttpChannel.write(HttpChannel.java:755) [superbowl.jar:na]
+	at org.eclipse.jetty.server.HttpOutput.write(HttpOutput.java:179) ~[superbowl.jar:na]
+	at org.eclipse.jetty.server.HttpOutput.write(HttpOutput.java:163) ~[superbowl.jar:na]
+	at org.eclipse.jetty.server.HttpOutput.write(HttpOutput.java:415) ~[superbowl.jar:na]
+	at com.google.common.io.ByteStreams.copy(ByteStreams.java:179) ~[superbowl.jar:na]
+	at ninja.AssetsController.streamOutUrlEntity(AssetsController.java:154) [superbowl.jar:na]
+	at ninja.AssetsController.access$200(AssetsController.java:45) [superbowl.jar:na]
+	at ninja.AssetsController$1.render(AssetsController.java:95) [superbowl.jar:na]
+	at ninja.utils.ResultHandler.handleRenderable(ResultHandler.java:87) [superbowl.jar:na]
+	at ninja.utils.ResultHandler.handleResult(ResultHandler.java:60) [superbowl.jar:na]
+	at ninja.NinjaDefault.onRouteRequest(NinjaDefault.java:104) [superbowl.jar:na]
+	at ninja.servlet.NinjaServletDispatcher.service(NinjaServletDispatcher.java:86) [superbowl.jar:na]
+	at com.google.inject.servlet.ServletDefinition.doServiceImpl(ServletDefinition.java:286) [superbowl.jar:na]
+	at com.google.inject.servlet.ServletDefinition.doService(ServletDefinition.java:276) [superbowl.jar:na]
+	at com.google.inject.servlet.ServletDefinition.service(ServletDefinition.java:181) [superbowl.jar:na]
+	at com.google.inject.servlet.ManagedServletPipeline.service(ManagedServletPipeline.java:91) [superbowl.jar:na]
+	at com.google.inject.servlet.FilterChainInvocation.doFilter(FilterChainInvocation.java:85) [superbowl.jar:na]
+	at com.google.inject.servlet.ManagedFilterPipeline.dispatch(ManagedFilterPipeline.java:120) [superbowl.jar:na]
+	at com.google.inject.servlet.GuiceFilter.doFilter(GuiceFilter.java:135) [superbowl.jar:na]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1676) [superbowl.jar:na]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:581) [superbowl.jar:na]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180) [superbowl.jar:na]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:511) [superbowl.jar:na]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112) [superbowl.jar:na]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) [superbowl.jar:na]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134) [superbowl.jar:na]
+	at org.eclipse.jetty.server.Server.handle(Server.java:524) [superbowl.jar:na]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:319) [superbowl.jar:na]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:253) [superbowl.jar:na]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273) [superbowl.jar:na]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95) [superbowl.jar:na]
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93) [superbowl.jar:na]
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303) [superbowl.jar:na]
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148) [superbowl.jar:na]
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136) [superbowl.jar:na]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671) [superbowl.jar:na]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589) [superbowl.jar:na]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_171]
+Caused by: java.io.IOException: Datenübergabe unterbrochen (broken pipe)
+	at sun.nio.ch.FileDispatcherImpl.writev0(Native Method) ~[na:1.8.0_171]
+	at sun.nio.ch.SocketDispatcher.writev(SocketDispatcher.java:51) ~[na:1.8.0_171]
+	at sun.nio.ch.IOUtil.write(IOUtil.java:148) ~[na:1.8.0_171]
+	at sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:504) ~[na:1.8.0_171]
+	at org.eclipse.jetty.io.ChannelEndPoint.flush(ChannelEndPoint.java:177) ~[superbowl.jar:na]
+	... 46 common frames omitted
+10:42:45.261 [C3P0PooledConnectionPoolManager[identityToken->z8kfsx9v1ebf0l31tmqf0a|914623]-HelperThread-#2] WARN  c.m.v.resourcepool.BasicResourcePool - com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@16c14aa -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (30). Last acquisition attempt exception: 
+org.h2.jdbc.JdbcSQLException: Verbindung ist unterbrochen: "java.net.ConnectException: Verbindungsaufbau abgelehnt (Connection refused): localhost:9092"
+Connection is broken: "java.net.ConnectException: Verbindungsaufbau abgelehnt (Connection refused): localhost:9092" [90067-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345) ~[superbowl.jar:na]
+	at org.h2.message.DbException.get(DbException.java:168) ~[superbowl.jar:na]
+	at org.h2.engine.SessionRemote.connectServer(SessionRemote.java:452) ~[superbowl.jar:na]
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:329) ~[superbowl.jar:na]
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:115) ~[superbowl.jar:na]
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99) ~[superbowl.jar:na]
+	at org.h2.Driver.connect(Driver.java:69) ~[superbowl.jar:na]
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:146) ~[superbowl.jar:na]
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:195) ~[superbowl.jar:na]
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:184) ~[superbowl.jar:na]
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:200) ~[superbowl.jar:na]
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1086) ~[superbowl.jar:na]
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1073) ~[superbowl.jar:na]
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:44) ~[superbowl.jar:na]
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1810) ~[superbowl.jar:na]
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:648) [superbowl.jar:na]
+Caused by: java.net.ConnectException: Verbindungsaufbau abgelehnt (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_171]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_171]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_171]
+	at org.h2.util.NetUtils.createSocket(NetUtils.java:122) ~[superbowl.jar:na]
+	at org.h2.util.NetUtils.createSocket(NetUtils.java:102) ~[superbowl.jar:na]
+	at org.h2.engine.SessionRemote.initTransfer(SessionRemote.java:114) ~[superbowl.jar:na]
+	at org.h2.engine.SessionRemote.connectServer(SessionRemote.java:448) ~[superbowl.jar:na]
+	... 13 common frames omitted
+10:42:45.262 [C3P0PooledConnectionPoolManager[identityToken->z8kfsx9v1ebf0l31tmqf0a|914623]-HelperThread-#2] WARN  c.m.v.resourcepool.BasicResourcePool - Having failed to acquire a resource, com.mchange.v2.resourcepool.BasicResourcePool@105d1b is interrupting all Threads waiting on a resource to check out. Will try again in response to new client requests.
+10:42:45.263 [qtp13138721-16] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: null
+10:42:45.263 [qtp13138721-12] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: null
+10:42:45.264 [qtp13138721-11] WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: null
+10:42:45.264 [qtp13138721-16] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Connections could not be acquired from the underlying database!
+10:42:45.264 [qtp13138721-12] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Connections could not be acquired from the underlying database!
+10:42:45.266 [qtp13138721-11] ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Connections could not be acquired from the underlying database!
+10:42:45.291 [qtp13138721-12] ERROR ninja.NinjaDefault - Emitting bad request 500. Something really wrong when calling route: /superbowl/bowl (class: class controllers.AbstractBowlController method: public ninja.Result controllers.AbstractBowlController.listBowl(ninja.Context))
+javax.persistence.PersistenceException: org.hibernate.exception.GenericJDBCException: Could not open connection
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1763) ~[superbowl.jar:na]
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1677) ~[superbowl.jar:na]
+	at org.hibernate.jpa.internal.QueryImpl.getResultList(QueryImpl.java:458) ~[superbowl.jar:na]
+	at dao.BowlDao.listBowls(BowlDao.java:467) ~[superbowl.jar:na]
+	at ninja.jpa.UnitOfWorkInterceptor.invoke(UnitOfWorkInterceptor.java:66) ~[superbowl.jar:na]
+	at services.BowlServiceImpl.listBowls(BowlServiceImpl.java:261) ~[superbowl.jar:na]
+	at controllers.AbstractBowlController.listBowl(AbstractBowlController.java:236) ~[superbowl.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_171]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_171]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_171]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_171]
+	at ninja.params.ControllerMethodInvoker.invoke(ControllerMethodInvoker.java:76) ~[superbowl.jar:na]
+	at ninja.FilterChainEnd.next(FilterChainEnd.java:41) ~[superbowl.jar:na]
+	at ninja.NinjaDefault.onRouteRequest(NinjaDefault.java:102) ~[superbowl.jar:na]
+	at ninja.servlet.NinjaServletDispatcher.service(NinjaServletDispatcher.java:86) [superbowl.jar:na]
+	at com.google.inject.servlet.ServletDefinition.doServiceImpl(ServletDefinition.java:286) [superbowl.jar:na]
+	at com.google.inject.servlet.ServletDefinition.doService(ServletDefinition.java:276) [superbowl.jar:na]
+	at com.google.inject.servlet.ServletDefinition.service(ServletDefinition.java:181) [superbowl.jar:na]
+	at com.google.inject.servlet.ManagedServletPipeline.service(ManagedServletPipeline.java:91) [superbowl.jar:na]
+	at com.google.inject.servlet.FilterChainInvocation.doFilter(FilterChainInvocation.java:85) [superbowl.jar:na]
+	at com.google.inject.servlet.ManagedFilterPipeline.dispatch(ManagedFilterPipeline.java:120) [superbowl.jar:na]
+	at com.google.inject.servlet.GuiceFilter.doFilter(GuiceFilter.java:135) [superbowl.jar:na]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1676) [superbowl.jar:na]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:581) [superbowl.jar:na]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180) [superbowl.jar:na]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:511) [superbowl.jar:na]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112) [superbowl.jar:na]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) [superbowl.jar:na]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134) [superbowl.jar:na]
+	at org.eclipse.jetty.server.Server.handle(Server.java:524) [superbowl.jar:na]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:319) [superbowl.jar:na]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:253) [superbowl.jar:na]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273) [superbowl.jar:na]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95) [superbowl.jar:na]
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93) [superbowl.jar:na]
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303) [superbowl.jar:na]
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148) [superbowl.jar:na]
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136) [superbowl.jar:na]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671) [superbowl.jar:na]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589) [superbowl.jar:na]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_171]
+Caused by: org.hibernate.exception.GenericJDBCException: Could not open connection
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:54) ~[superbowl.jar:na]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:126) ~[superbowl.jar:na]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:112) ~[superbowl.jar:na]
+	at org.hibernate.engine.jdbc.internal.LogicalConnectionImpl.obtainConnection(LogicalConnectionImpl.java:235) ~[superbowl.jar:na]
+	at org.hibernate.engine.jdbc.internal.LogicalConnectionImpl.getConnection(LogicalConnectionImpl.java:171) ~[superbowl.jar:na]
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl.connection(StatementPreparerImpl.java:63) ~[superbowl.jar:na]
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$5.doPrepare(StatementPreparerImpl.java:162) ~[superbowl.jar:na]
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$StatementPreparationTemplate.prepareStatement(StatementPreparerImpl.java:186) ~[superbowl.jar:na]
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl.prepareQueryStatement(StatementPreparerImpl.java:160) ~[superbowl.jar:na]
+	at org.hibernate.loader.Loader.prepareQueryStatement(Loader.java:1885) ~[superbowl.jar:na]
+	at org.hibernate.loader.Loader.executeQueryStatement(Loader.java:1862) ~[superbowl.jar:na]
+	at org.hibernate.loader.Loader.executeQueryStatement(Loader.java:1839) ~[superbowl.jar:na]
+	at org.hibernate.loader.Loader.doQuery(Loader.java:910) ~[superbowl.jar:na]
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:355) ~[superbowl.jar:na]
+	at org.hibernate.loader.Loader.doList(Loader.java:2554) ~[superbowl.jar:na]
+	at org.hibernate.loader.Loader.doList(Loader.java:2540) ~[superbowl.jar:na]
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2370) ~[superbowl.jar:na]
+	at org.hibernate.loader.Loader.list(Loader.java:2365) ~[superbowl.jar:na]
+	at org.hibernate.loader.hql.QueryLoader.list(QueryLoader.java:497) ~[superbowl.jar:na]
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.list(QueryTranslatorImpl.java:387) ~[superbowl.jar:na]
+	at org.hibernate.engine.query.spi.HQLQueryPlan.performList(HQLQueryPlan.java:236) ~[superbowl.jar:na]
+	at org.hibernate.internal.SessionImpl.list(SessionImpl.java:1264) ~[superbowl.jar:na]
+	at org.hibernate.internal.QueryImpl.list(QueryImpl.java:103) ~[superbowl.jar:na]
+	at org.hibernate.jpa.internal.QueryImpl.list(QueryImpl.java:573) ~[superbowl.jar:na]
+	at org.hibernate.jpa.internal.QueryImpl.getResultList(QueryImpl.java:449) ~[superbowl.jar:na]
+	... 38 common frames omitted
+Caused by: java.sql.SQLException: Connections could not be acquired from the underlying database!
+	at com.mchange.v2.sql.SqlUtils.toSQLException(SqlUtils.java:118) ~[superbowl.jar:na]
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool.checkoutPooledConnection(C3P0PooledConnectionPool.java:689) ~[superbowl.jar:na]
+	at com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource.getConnection(AbstractPoolBackedDataSource.java:140) ~[superbowl.jar:na]
+	at org.hibernate.c3p0.internal.C3P0ConnectionProvider.getConnection(C3P0ConnectionProvider.java:90) ~[superbowl.jar:na]
+	at org.hibernate.internal.AbstractSessionImpl$NonContextualJdbcConnectionAccess.obtainConnection(AbstractSessionImpl.java:380) ~[superbowl.jar:na]
+	at org.hibernate.engine.jdbc.internal.LogicalConnectionImpl.obtainConnection(LogicalConnectionImpl.java:228) ~[superbowl.jar:na]
+	... 59 common frames omitted
+Caused by: com.mchange.v2.resourcepool.CannotAcquireResourceException: A ResourcePool could not acquire a resource from its primary factory or source.
+	at com.mchange.v2.resourcepool.BasicResourcePool.awaitAvailable(BasicResourcePool.java:1418) ~[superbowl.jar:na]
+	at com.mchange.v2.resourcepool.BasicResourcePool.prelimCheckoutResource(BasicResourcePool.java:606) ~[superbowl.jar:na]
+	at com.mchange.v2.resourcepool.BasicResourcePool.checkoutResource(BasicResourcePool.java:526) ~[superbowl.jar:na]
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool.checkoutAndMarkConnectionInUse(C3P0PooledConnectionPool.java:755) ~[superbowl.jar:na]
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool.checkoutPooledConnection(C3P0PooledConnectionPool.java:682) ~[superbowl.jar:na]
+	... 63 common frames omitted
+10:42:45.296 [qtp13138721-16] ERROR ninja.NinjaDefault - Emitting bad request 500. Something really wrong when calling route: /superbowl/customer (class: class controllers.CustomerController method: public ninja.Result controllers.CustomerController.list(ninja.Context))
+javax.persistence.PersistenceException: org.hibernate.exception.GenericJDBCException: Could not open connection
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1763) ~[superbowl.jar:na]
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1677) ~[superbowl.jar:na]
+	at org.hibernate.jpa.internal.QueryImpl.getResultList(QueryImpl.java:458) ~[superbowl.jar:na]
+	at dao.CustomerDao.listCustomers(CustomerDao.java:262) ~[superbowl.jar:na]
+	at ninja.jpa.UnitOfWorkInterceptor.invoke(UnitOfWorkInterceptor.java:66) ~[superbowl.jar:na]
+	at services.CustomerServiceImpl.listCustomers(CustomerServiceImpl.java:116) ~[superbowl.jar:na]
+	at controllers.CustomerController.list(CustomerController.java:73) ~[superbowl.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_171]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_171]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_171]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_171]
+	at ninja.params.ControllerMethodInvoker.invoke(ControllerMethodInvoker.java:76) ~[superbowl.jar:na]
+	at ninja.FilterChainEnd.next(FilterChainEnd.java:41) ~[superbowl.jar:na]
+	at ninja.NinjaDefault.onRouteRequest(NinjaDefault.java:102) ~[superbowl.jar:na]
+	at ninja.servlet.NinjaServletDispatcher.service(NinjaServletDispatcher.java:86) [superbowl.jar:na]
+	at com.google.inject.servlet.ServletDefinition.doServiceImpl(ServletDefinition.java:286) [superbowl.jar:na]
+	at com.google.inject.servlet.ServletDefinition.doService(ServletDefinition.java:276) [superbowl.jar:na]
+	at com.google.inject.servlet.ServletDefinition.service(ServletDefinition.java:181) [superbowl.jar:na]
+	at com.google.inject.servlet.ManagedServletPipeline.service(ManagedServletPipeline.java:91) [superbowl.jar:na]
+	at com.google.inject.servlet.FilterChainInvocation.doFilter(FilterChainInvocation.java:85) [superbowl.jar:na]
+	at com.google.inject.servlet.ManagedFilterPipeline.dispatch(ManagedFilterPipeline.java:120) [superbowl.jar:na]
+	at com.google.inject.servlet.GuiceFilter.doFilter(GuiceFilter.java:135) [superbowl.jar:na]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1676) [superbowl.jar:na]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:581) [superbowl.jar:na]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180) [superbowl.jar:na]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:511) [superbowl.jar:na]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112) [superbowl.jar:na]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) [superbowl.jar:na]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134) [superbowl.jar:na]
+	at org.eclipse.jetty.server.Server.handle(Server.java:524) [superbowl.jar:na]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:319) [superbowl.jar:na]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:253) [superbowl.jar:na]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273) [superbowl.jar:na]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95) [superbowl.jar:na]
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93) [superbowl.jar:na]
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303) [superbowl.jar:na]
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148) [superbowl.jar:na]
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136) [superbowl.jar:na]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671) [superbowl.jar:na]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589) [superbowl.jar:na]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_171]
+Caused by: org.hibernate.exception.GenericJDBCException: Could not open connection
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:54) ~[superbowl.jar:na]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:126) ~[superbowl.jar:na]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:112) ~[superbowl.jar:na]
+	at org.hibernate.engine.jdbc.internal.LogicalConnectionImpl.obtainConnection(LogicalConnectionImpl.java:235) ~[superbowl.jar:na]
+	at org.hibernate.engine.jdbc.internal.LogicalConnectionImpl.getConnection(LogicalConnectionImpl.java:171) ~[superbowl.jar:na]
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl.connection(StatementPreparerImpl.java:63) ~[superbowl.jar:na]
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$5.doPrepare(StatementPreparerImpl.java:162) ~[superbowl.jar:na]
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$StatementPreparationTemplate.prepareStatement(StatementPreparerImpl.java:186) ~[superbowl.jar:na]
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl.prepareQueryStatement(StatementPreparerImpl.java:160) ~[superbowl.jar:na]
+	at org.hibernate.loader.Loader.prepareQueryStatement(Loader.java:1885) ~[superbowl.jar:na]
+	at org.hibernate.loader.Loader.executeQueryStatement(Loader.java:1862) ~[superbowl.jar:na]
+	at org.hibernate.loader.Loader.executeQueryStatement(Loader.java:1839) ~[superbowl.jar:na]
+	at org.hibernate.loader.Loader.doQuery(Loader.java:910) ~[superbowl.jar:na]
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:355) ~[superbowl.jar:na]
+	at org.hibernate.loader.Loader.doList(Loader.java:2554) ~[superbowl.jar:na]
+	at org.hibernate.loader.Loader.doList(Loader.java:2540) ~[superbowl.jar:na]
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2370) ~[superbowl.jar:na]
+	at org.hibernate.loader.Loader.list(Loader.java:2365) ~[superbowl.jar:na]
+	at org.hibernate.loader.hql.QueryLoader.list(QueryLoader.java:497) ~[superbowl.jar:na]
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.list(QueryTranslatorImpl.java:387) ~[superbowl.jar:na]
+	at org.hibernate.engine.query.spi.HQLQueryPlan.performList(HQLQueryPlan.java:236) ~[superbowl.jar:na]
+	at org.hibernate.internal.SessionImpl.list(SessionImpl.java:1264) ~[superbowl.jar:na]
+	at org.hibernate.internal.QueryImpl.list(QueryImpl.java:103) ~[superbowl.jar:na]
+	at org.hibernate.jpa.internal.QueryImpl.list(QueryImpl.java:573) ~[superbowl.jar:na]
+	at org.hibernate.jpa.internal.QueryImpl.getResultList(QueryImpl.java:449) ~[superbowl.jar:na]
+	... 38 common frames omitted
+Caused by: java.sql.SQLException: Connections could not be acquired from the underlying database!
+	at com.mchange.v2.sql.SqlUtils.toSQLException(SqlUtils.java:118) ~[superbowl.jar:na]
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool.checkoutPooledConnection(C3P0PooledConnectionPool.java:689) ~[superbowl.jar:na]
+	at com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource.getConnection(AbstractPoolBackedDataSource.java:140) ~[superbowl.jar:na]
+	at org.hibernate.c3p0.internal.C3P0ConnectionProvider.getConnection(C3P0ConnectionProvider.java:90) ~[superbowl.jar:na]
+	at org.hibernate.internal.AbstractSessionImpl$NonContextualJdbcConnectionAccess.obtainConnection(AbstractSessionImpl.java:380) ~[superbowl.jar:na]
+	at org.hibernate.engine.jdbc.internal.LogicalConnectionImpl.obtainConnection(LogicalConnectionImpl.java:228) ~[superbowl.jar:na]
+	... 59 common frames omitted
+Caused by: com.mchange.v2.resourcepool.CannotAcquireResourceException: A ResourcePool could not acquire a resource from its primary factory or source.
+	at com.mchange.v2.resourcepool.BasicResourcePool.awaitAvailable(BasicResourcePool.java:1418) ~[superbowl.jar:na]
+	at com.mchange.v2.resourcepool.BasicResourcePool.prelimCheckoutResource(BasicResourcePool.java:606) ~[superbowl.jar:na]
+	at com.mchange.v2.resourcepool.BasicResourcePool.checkoutResource(BasicResourcePool.java:526) ~[superbowl.jar:na]
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool.checkoutAndMarkConnectionInUse(C3P0PooledConnectionPool.java:755) ~[superbowl.jar:na]
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool.checkoutPooledConnection(C3P0PooledConnectionPool.java:682) ~[superbowl.jar:na]
+	... 63 common frames omitted
+10:42:45.302 [qtp13138721-11] ERROR ninja.NinjaDefault - Emitting bad request 500. Something really wrong when calling route: /superbowl/bowl (class: class controllers.AbstractBowlController method: public ninja.Result controllers.AbstractBowlController.listBowl(ninja.Context))
+javax.persistence.PersistenceException: org.hibernate.exception.GenericJDBCException: Could not open connection
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1763) ~[superbowl.jar:na]
+	at org.hibernate.jpa.spi.AbstractEntityManagerImpl.convert(AbstractEntityManagerImpl.java:1677) ~[superbowl.jar:na]
+	at org.hibernate.jpa.internal.QueryImpl.getResultList(QueryImpl.java:458) ~[superbowl.jar:na]
+	at dao.BowlDao.listBowls(BowlDao.java:467) ~[superbowl.jar:na]
+	at ninja.jpa.UnitOfWorkInterceptor.invoke(UnitOfWorkInterceptor.java:66) ~[superbowl.jar:na]
+	at services.BowlServiceImpl.listBowls(BowlServiceImpl.java:261) ~[superbowl.jar:na]
+	at controllers.AbstractBowlController.listBowl(AbstractBowlController.java:236) ~[superbowl.jar:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_171]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_171]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_171]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_171]
+	at ninja.params.ControllerMethodInvoker.invoke(ControllerMethodInvoker.java:76) ~[superbowl.jar:na]
+	at ninja.FilterChainEnd.next(FilterChainEnd.java:41) ~[superbowl.jar:na]
+	at ninja.NinjaDefault.onRouteRequest(NinjaDefault.java:102) ~[superbowl.jar:na]
+	at ninja.servlet.NinjaServletDispatcher.service(NinjaServletDispatcher.java:86) [superbowl.jar:na]
+	at com.google.inject.servlet.ServletDefinition.doServiceImpl(ServletDefinition.java:286) [superbowl.jar:na]
+	at com.google.inject.servlet.ServletDefinition.doService(ServletDefinition.java:276) [superbowl.jar:na]
+	at com.google.inject.servlet.ServletDefinition.service(ServletDefinition.java:181) [superbowl.jar:na]
+	at com.google.inject.servlet.ManagedServletPipeline.service(ManagedServletPipeline.java:91) [superbowl.jar:na]
+	at com.google.inject.servlet.FilterChainInvocation.doFilter(FilterChainInvocation.java:85) [superbowl.jar:na]
+	at com.google.inject.servlet.ManagedFilterPipeline.dispatch(ManagedFilterPipeline.java:120) [superbowl.jar:na]
+	at com.google.inject.servlet.GuiceFilter.doFilter(GuiceFilter.java:135) [superbowl.jar:na]
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1676) [superbowl.jar:na]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:581) [superbowl.jar:na]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1180) [superbowl.jar:na]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:511) [superbowl.jar:na]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1112) [superbowl.jar:na]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) [superbowl.jar:na]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:134) [superbowl.jar:na]
+	at org.eclipse.jetty.server.Server.handle(Server.java:524) [superbowl.jar:na]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:319) [superbowl.jar:na]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:253) [superbowl.jar:na]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:273) [superbowl.jar:na]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:95) [superbowl.jar:na]
+	at org.eclipse.jetty.io.SelectChannelEndPoint$2.run(SelectChannelEndPoint.java:93) [superbowl.jar:na]
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.executeProduceConsume(ExecuteProduceConsume.java:303) [superbowl.jar:na]
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.produceConsume(ExecuteProduceConsume.java:148) [superbowl.jar:na]
+	at org.eclipse.jetty.util.thread.strategy.ExecuteProduceConsume.run(ExecuteProduceConsume.java:136) [superbowl.jar:na]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:671) [superbowl.jar:na]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:589) [superbowl.jar:na]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_171]
+Caused by: org.hibernate.exception.GenericJDBCException: Could not open connection
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:54) ~[superbowl.jar:na]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:126) ~[superbowl.jar:na]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:112) ~[superbowl.jar:na]
+	at org.hibernate.engine.jdbc.internal.LogicalConnectionImpl.obtainConnection(LogicalConnectionImpl.java:235) ~[superbowl.jar:na]
+	at org.hibernate.engine.jdbc.internal.LogicalConnectionImpl.getConnection(LogicalConnectionImpl.java:171) ~[superbowl.jar:na]
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl.connection(StatementPreparerImpl.java:63) ~[superbowl.jar:na]
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$5.doPrepare(StatementPreparerImpl.java:162) ~[superbowl.jar:na]
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl$StatementPreparationTemplate.prepareStatement(StatementPreparerImpl.java:186) ~[superbowl.jar:na]
+	at org.hibernate.engine.jdbc.internal.StatementPreparerImpl.prepareQueryStatement(StatementPreparerImpl.java:160) ~[superbowl.jar:na]
+	at org.hibernate.loader.Loader.prepareQueryStatement(Loader.java:1885) ~[superbowl.jar:na]
+	at org.hibernate.loader.Loader.executeQueryStatement(Loader.java:1862) ~[superbowl.jar:na]
+	at org.hibernate.loader.Loader.executeQueryStatement(Loader.java:1839) ~[superbowl.jar:na]
+	at org.hibernate.loader.Loader.doQuery(Loader.java:910) ~[superbowl.jar:na]
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:355) ~[superbowl.jar:na]
+	at org.hibernate.loader.Loader.doList(Loader.java:2554) ~[superbowl.jar:na]
+	at org.hibernate.loader.Loader.doList(Loader.java:2540) ~[superbowl.jar:na]
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2370) ~[superbowl.jar:na]
+	at org.hibernate.loader.Loader.list(Loader.java:2365) ~[superbowl.jar:na]
+	at org.hibernate.loader.hql.QueryLoader.list(QueryLoader.java:497) ~[superbowl.jar:na]
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.list(QueryTranslatorImpl.java:387) ~[superbowl.jar:na]
+	at org.hibernate.engine.query.spi.HQLQueryPlan.performList(HQLQueryPlan.java:236) ~[superbowl.jar:na]
+	at org.hibernate.internal.SessionImpl.list(SessionImpl.java:1264) ~[superbowl.jar:na]
+	at org.hibernate.internal.QueryImpl.list(QueryImpl.java:103) ~[superbowl.jar:na]
+	at org.hibernate.jpa.internal.QueryImpl.list(QueryImpl.java:573) ~[superbowl.jar:na]
+	at org.hibernate.jpa.internal.QueryImpl.getResultList(QueryImpl.java:449) ~[superbowl.jar:na]
+	... 38 common frames omitted
+Caused by: java.sql.SQLException: Connections could not be acquired from the underlying database!
+	at com.mchange.v2.sql.SqlUtils.toSQLException(SqlUtils.java:118) ~[superbowl.jar:na]
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool.checkoutPooledConnection(C3P0PooledConnectionPool.java:689) ~[superbowl.jar:na]
+	at com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource.getConnection(AbstractPoolBackedDataSource.java:140) ~[superbowl.jar:na]
+	at org.hibernate.c3p0.internal.C3P0ConnectionProvider.getConnection(C3P0ConnectionProvider.java:90) ~[superbowl.jar:na]
+	at org.hibernate.internal.AbstractSessionImpl$NonContextualJdbcConnectionAccess.obtainConnection(AbstractSessionImpl.java:380) ~[superbowl.jar:na]
+	at org.hibernate.engine.jdbc.internal.LogicalConnectionImpl.obtainConnection(LogicalConnectionImpl.java:228) ~[superbowl.jar:na]
+	... 59 common frames omitted
+Caused by: com.mchange.v2.resourcepool.CannotAcquireResourceException: A ResourcePool could not acquire a resource from its primary factory or source.
+	at com.mchange.v2.resourcepool.BasicResourcePool.awaitAvailable(BasicResourcePool.java:1418) ~[superbowl.jar:na]
+	at com.mchange.v2.resourcepool.BasicResourcePool.prelimCheckoutResource(BasicResourcePool.java:606) ~[superbowl.jar:na]
+	at com.mchange.v2.resourcepool.BasicResourcePool.checkoutResource(BasicResourcePool.java:526) ~[superbowl.jar:na]
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool.checkoutAndMarkConnectionInUse(C3P0PooledConnectionPool.java:755) ~[superbowl.jar:na]
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool.checkoutPooledConnection(C3P0PooledConnectionPool.java:682) ~[superbowl.jar:na]
+	... 63 common frames omitted
+10:42:45.527 [C3P0PooledConnectionPoolManager[identityToken->z8kfsx9v1ebf0l31tmqf0a|914623]-HelperThread-#1] WARN  c.m.v.resourcepool.BasicResourcePool - com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@3d9c0d -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (30). Last acquisition attempt exception: 
+org.h2.jdbc.JdbcSQLException: Verbindung ist unterbrochen: "java.net.ConnectException: Verbindungsaufbau abgelehnt (Connection refused): localhost:9092"
+Connection is broken: "java.net.ConnectException: Verbindungsaufbau abgelehnt (Connection refused): localhost:9092" [90067-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345) ~[superbowl.jar:na]
+	at org.h2.message.DbException.get(DbException.java:168) ~[superbowl.jar:na]
+	at org.h2.engine.SessionRemote.connectServer(SessionRemote.java:452) ~[superbowl.jar:na]
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:329) ~[superbowl.jar:na]
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:115) ~[superbowl.jar:na]
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99) ~[superbowl.jar:na]
+	at org.h2.Driver.connect(Driver.java:69) ~[superbowl.jar:na]
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:146) ~[superbowl.jar:na]
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:195) ~[superbowl.jar:na]
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:184) ~[superbowl.jar:na]
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:200) ~[superbowl.jar:na]
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1086) ~[superbowl.jar:na]
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1073) ~[superbowl.jar:na]
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:44) ~[superbowl.jar:na]
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1810) ~[superbowl.jar:na]
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:648) [superbowl.jar:na]
+Caused by: java.net.ConnectException: Verbindungsaufbau abgelehnt (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_171]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_171]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_171]
+	at org.h2.util.NetUtils.createSocket(NetUtils.java:122) ~[superbowl.jar:na]
+	at org.h2.util.NetUtils.createSocket(NetUtils.java:102) ~[superbowl.jar:na]
+	at org.h2.engine.SessionRemote.initTransfer(SessionRemote.java:114) ~[superbowl.jar:na]
+	at org.h2.engine.SessionRemote.connectServer(SessionRemote.java:448) ~[superbowl.jar:na]
+	... 13 common frames omitted
+10:42:45.528 [C3P0PooledConnectionPoolManager[identityToken->z8kfsx9v1ebf0l31tmqf0a|914623]-HelperThread-#1] WARN  c.m.v.resourcepool.BasicResourcePool - Having failed to acquire a resource, com.mchange.v2.resourcepool.BasicResourcePool@105d1b is interrupting all Threads waiting on a resource to check out. Will try again in response to new client requests.
+10:42:45.779 [C3P0PooledConnectionPoolManager[identityToken->z8kfsx9v1ebf0l31tmqf0a|914623]-HelperThread-#0] WARN  c.m.v.resourcepool.BasicResourcePool - com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@1bd5712 -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (30). Last acquisition attempt exception: 
+org.h2.jdbc.JdbcSQLException: Verbindung ist unterbrochen: "java.net.ConnectException: Verbindungsaufbau abgelehnt (Connection refused): localhost:9092"
+Connection is broken: "java.net.ConnectException: Verbindungsaufbau abgelehnt (Connection refused): localhost:9092" [90067-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345) ~[superbowl.jar:na]
+	at org.h2.message.DbException.get(DbException.java:168) ~[superbowl.jar:na]
+	at org.h2.engine.SessionRemote.connectServer(SessionRemote.java:452) ~[superbowl.jar:na]
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:329) ~[superbowl.jar:na]
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:115) ~[superbowl.jar:na]
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99) ~[superbowl.jar:na]
+	at org.h2.Driver.connect(Driver.java:69) ~[superbowl.jar:na]
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:146) ~[superbowl.jar:na]
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:195) ~[superbowl.jar:na]
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:184) ~[superbowl.jar:na]
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:200) ~[superbowl.jar:na]
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1086) ~[superbowl.jar:na]
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1073) ~[superbowl.jar:na]
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:44) ~[superbowl.jar:na]
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1810) ~[superbowl.jar:na]
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:648) [superbowl.jar:na]
+Caused by: java.net.ConnectException: Verbindungsaufbau abgelehnt (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_171]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_171]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_171]
+	at org.h2.util.NetUtils.createSocket(NetUtils.java:122) ~[superbowl.jar:na]
+	at org.h2.util.NetUtils.createSocket(NetUtils.java:102) ~[superbowl.jar:na]
+	at org.h2.engine.SessionRemote.initTransfer(SessionRemote.java:114) ~[superbowl.jar:na]
+	at org.h2.engine.SessionRemote.connectServer(SessionRemote.java:448) ~[superbowl.jar:na]
+	... 13 common frames omitted
+10:42:45.780 [C3P0PooledConnectionPoolManager[identityToken->z8kfsx9v1ebf0l31tmqf0a|914623]-HelperThread-#0] WARN  c.m.v.resourcepool.BasicResourcePool - Having failed to acquire a resource, com.mchange.v2.resourcepool.BasicResourcePool@105d1b is interrupting all Threads waiting on a resource to check out. Will try again in response to new client requests.
+10:42:46.059 [qtp13138721-14] INFO  Ninja - ApplicationController.index(context) 
+10:42:46.059 [qtp13138721-14] INFO  Ninja - ApplicationController -> ContextPath (Ninja Properties): 
+10:42:46.059 [qtp13138721-14] INFO  Ninja - ApplicationController -> ContextPath (Context).........: 
+10:42:46.568 [C3P0PooledConnectionPoolManager[identityToken->z8kfsx9v1ebf0l31tmqf0a|914623]-HelperThread-#2] WARN  c.m.v.resourcepool.BasicResourcePool - com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@184c019 -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (30). Last acquisition attempt exception: 
+org.h2.jdbc.JdbcSQLException: Verbindung ist unterbrochen: "java.net.ConnectException: Verbindungsaufbau abgelehnt (Connection refused): localhost:9092"
+Connection is broken: "java.net.ConnectException: Verbindungsaufbau abgelehnt (Connection refused): localhost:9092" [90067-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345) ~[superbowl.jar:na]
+	at org.h2.message.DbException.get(DbException.java:168) ~[superbowl.jar:na]
+	at org.h2.engine.SessionRemote.connectServer(SessionRemote.java:452) ~[superbowl.jar:na]
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:329) ~[superbowl.jar:na]
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:115) ~[superbowl.jar:na]
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99) ~[superbowl.jar:na]
+	at org.h2.Driver.connect(Driver.java:69) ~[superbowl.jar:na]
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:146) ~[superbowl.jar:na]
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:195) ~[superbowl.jar:na]
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:184) ~[superbowl.jar:na]
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:200) ~[superbowl.jar:na]
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1086) ~[superbowl.jar:na]
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1073) ~[superbowl.jar:na]
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:44) ~[superbowl.jar:na]
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1810) ~[superbowl.jar:na]
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:648) [superbowl.jar:na]
+Caused by: java.net.ConnectException: Verbindungsaufbau abgelehnt (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_171]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_171]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_171]
+	at org.h2.util.NetUtils.createSocket(NetUtils.java:122) ~[superbowl.jar:na]
+	at org.h2.util.NetUtils.createSocket(NetUtils.java:102) ~[superbowl.jar:na]
+	at org.h2.engine.SessionRemote.initTransfer(SessionRemote.java:114) ~[superbowl.jar:na]
+	at org.h2.engine.SessionRemote.connectServer(SessionRemote.java:448) ~[superbowl.jar:na]
+	... 13 common frames omitted
+10:42:46.569 [C3P0PooledConnectionPoolManager[identityToken->z8kfsx9v1ebf0l31tmqf0a|914623]-HelperThread-#2] WARN  c.m.v.resourcepool.BasicResourcePool - Having failed to acquire a resource, com.mchange.v2.resourcepool.BasicResourcePool@105d1b is interrupting all Threads waiting on a resource to check out. Will try again in response to new client requests.
+10:42:46.790 [C3P0PooledConnectionPoolManager[identityToken->z8kfsx9v1ebf0l31tmqf0a|914623]-HelperThread-#1] WARN  c.m.v.resourcepool.BasicResourcePool - com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask@6eeffe -- Acquisition Attempt Failed!!! Clearing pending acquires. While trying to acquire a needed new resource, we failed to succeed more than the maximum number of allowed acquisition attempts (30). Last acquisition attempt exception: 
+org.h2.jdbc.JdbcSQLException: Verbindung ist unterbrochen: "java.net.ConnectException: Verbindungsaufbau abgelehnt (Connection refused): localhost:9092"
+Connection is broken: "java.net.ConnectException: Verbindungsaufbau abgelehnt (Connection refused): localhost:9092" [90067-193]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345) ~[superbowl.jar:na]
+	at org.h2.message.DbException.get(DbException.java:168) ~[superbowl.jar:na]
+	at org.h2.engine.SessionRemote.connectServer(SessionRemote.java:452) ~[superbowl.jar:na]
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:329) ~[superbowl.jar:na]
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:115) ~[superbowl.jar:na]
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:99) ~[superbowl.jar:na]
+	at org.h2.Driver.connect(Driver.java:69) ~[superbowl.jar:na]
+	at com.mchange.v2.c3p0.DriverManagerDataSource.getConnection(DriverManagerDataSource.java:146) ~[superbowl.jar:na]
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:195) ~[superbowl.jar:na]
+	at com.mchange.v2.c3p0.WrapperConnectionPoolDataSource.getPooledConnection(WrapperConnectionPoolDataSource.java:184) ~[superbowl.jar:na]
+	at com.mchange.v2.c3p0.impl.C3P0PooledConnectionPool$1PooledConnectionResourcePoolManager.acquireResource(C3P0PooledConnectionPool.java:200) ~[superbowl.jar:na]
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquire(BasicResourcePool.java:1086) ~[superbowl.jar:na]
+	at com.mchange.v2.resourcepool.BasicResourcePool.doAcquireAndDecrementPendingAcquiresWithinLockOnSuccess(BasicResourcePool.java:1073) ~[superbowl.jar:na]
+	at com.mchange.v2.resourcepool.BasicResourcePool.access$800(BasicResourcePool.java:44) ~[superbowl.jar:na]
+	at com.mchange.v2.resourcepool.BasicResourcePool$ScatteredAcquireTask.run(BasicResourcePool.java:1810) ~[superbowl.jar:na]
+	at com.mchange.v2.async.ThreadPoolAsynchronousRunner$PoolThread.run(ThreadPoolAsynchronousRunner.java:648) [superbowl.jar:na]
+Caused by: java.net.ConnectException: Verbindungsaufbau abgelehnt (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_171]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_171]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_171]
+	at java.net.Socket.connect(Socket.java:589) ~[na:1.8.0_171]
+	at org.h2.util.NetUtils.createSocket(NetUtils.java:122) ~[superbowl.jar:na]
+	at org.h2.util.NetUtils.createSocket(NetUtils.java:102) ~[superbowl.jar:na]
+	at org.h2.engine.SessionRemote.initTransfer(SessionRemote.java:114) ~[superbowl.jar:na]
+	at org.h2.engine.SessionRemote.connectServer(SessionRemote.java:448) ~[superbowl.jar:na]
+	... 13 common frames omitted
+10:42:46.790 [C3P0PooledConnectionPoolManager[identityToken->z8kfsx9v1ebf0l31tmqf0a|914623]-HelperThread-#1] WARN  c.m.v.resourcepool.BasicResourcePool - Having failed to acquire a resource, com.mchange.v2.resourcepool.BasicResourcePool@105d1b is interrupting all Threads waiting on a resource to check out. Will try again in response to new client requests.
+10:43:20.068 [qtp13138721-12] INFO  Ninja - ApplicationController.index(context) 
+10:43:20.069 [qtp13138721-12] INFO  Ninja - ApplicationController -> ContextPath (Ninja Properties): 
+10:43:20.069 [qtp13138721-12] INFO  Ninja - ApplicationController -> ContextPath (Context).........: 
+10:43:23.799 [qtp13138721-16] INFO  Ninja - 14 GeoRegion instance(s) found in data store!
+10:43:48.847 [qtp13138721-15] INFO  Ninja - 2 exhibition(s) found in data store!
+10:44:07.262 [qtp13138721-11] ERROR n.t.TemplateEngineFreemarkerAssetsAtMethod - Message key news.title missing. Using key as value inside template - but this is most likely not what you want.
+10:44:07.263 [qtp13138721-11] ERROR n.t.TemplateEngineFreemarkerAssetsAtMethod - Message key news.title.text missing. Using key as value inside template - but this is most likely not what you want.
+10:44:07.270 [qtp13138721-11] ERROR n.t.TemplateEngineFreemarkerAssetsAtMethod - Message key news.title missing. Using key as value inside template - but this is most likely not what you want.
+10:44:07.283 [qtp13138721-11] ERROR n.t.TemplateEngineFreemarkerAssetsAtMethod - Message key news.title.text missing. Using key as value inside template - but this is most likely not what you want.
+10:44:12.593 [qtp13138721-12] ERROR n.t.TemplateEngineFreemarkerAssetsAtMethod - Message key events.title missing. Using key as value inside template - but this is most likely not what you want.
+10:44:12.599 [qtp13138721-12] ERROR n.t.TemplateEngineFreemarkerAssetsAtMethod - Message key events.title.text missing. Using key as value inside template - but this is most likely not what you want.
+10:44:12.599 [qtp13138721-12] ERROR n.t.TemplateEngineFreemarkerAssetsAtMethod - Message key events.title missing. Using key as value inside template - but this is most likely not what you want.
+10:44:12.599 [qtp13138721-12] ERROR n.t.TemplateEngineFreemarkerAssetsAtMethod - Message key events.title.text missing. Using key as value inside template - but this is most likely not what you want.
+10:44:17.680 [qtp13138721-9] ERROR n.t.TemplateEngineFreemarkerAssetsAtMethod - Message key news.title missing. Using key as value inside template - but this is most likely not what you want.
+10:44:17.681 [qtp13138721-9] ERROR n.t.TemplateEngineFreemarkerAssetsAtMethod - Message key news.title.text missing. Using key as value inside template - but this is most likely not what you want.
+10:44:17.682 [qtp13138721-9] ERROR n.t.TemplateEngineFreemarkerAssetsAtMethod - Message key news.title missing. Using key as value inside template - but this is most likely not what you want.
+10:44:17.682 [qtp13138721-9] ERROR n.t.TemplateEngineFreemarkerAssetsAtMethod - Message key news.title.text missing. Using key as value inside template - but this is most likely not what you want.

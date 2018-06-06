@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>SuperBOWL Help</title>
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="superbowl-help.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Sidebar Holder -->
+      <nav id="sidebar">
+        <div class="sidebar-header">
+          <h3><a href="http://localhost:9000/superbowl" target="_blank">SuperBOWL</a> Help</h3>
+          <strong>SB</strong> </div>
+        <ul class="list-unstyled components">
+          <li> <a href="index.html"> <i class="glyphicon glyphicon-home"></i>
+              Home </a> </li>
+          <li class="active"> <a href="sb.html"> <i class="glyphicon glyphicon-hourglass"></i>
+              Applikation </a> </li>
+          <li> <a href="#h2Submenu" data-toggle="collapse" aria-expanded="false">
+              <i class="glyphicon glyphicon-hdd"></i> Datenbank </a>
+            <ul class="collapse list-unstyled" id="h2Submenu">
+              <li><a href="h2.html">Einführung</a></li>
+              <li><a href="h2-start-stop.html">Start/Stop</a></li>
+              <li><a href="h2-backup-restore.html">Backup/Restore</a></li>
+            </ul>
+          </li>
+          <li> <a href="admin.html"> <i class="glyphicon glyphicon-paperclip"></i>
+              Administration </a> </li>
+          <!--
+          <li> <a href="admin.html"> <i class="glyphicon glyphicon-briefcase"></i>              Administration </a> <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">              <i class="glyphicon glyphicon-duplicate"></i> Administration </a>            <ul class="collapse list-unstyled" id="pageSubmenu">              <li><a href="#">Page 1</a></li>              <li><a href="#">Page 2</a></li>              <li><a href="#">Page 3</a></li>            </ul>
+          </li>					-->
+          <li> <a href="about.html"> <i class="glyphicon glyphicon-education"></i>
+              About </a> </li>
+        </ul>
+        <!--
+        <ul class="list-unstyled CTAs">          <li><a href="https://bootstrapious.com/tutorial/files/sidebar.zip" class="download">Download              source</a></li>          <li><a href="https://bootstrapious.com/p/bootstrap-sidebar" class="article">Back              to article</a></li>        </ul>				-->
+      </nav>
+      <!-- Page Content Holder -->
+      <div id="content">
+        <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <div class="navbar-header"> <button type="button" id="sidebarCollapse"
+                class="btn btn-info navbar-btn"> <i class="glyphicon glyphicon-align-left"></i>
+                <span>Toggle Sidebar</span> </button> </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right">
+                <!--
+                <li><a href="#">Page</a></li>
+                <li><a href="#">Page</a></li>
+                <li><a href="#">Page</a></li>
+                <li><a href="#">Page</a></li>
+								-->
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <div class="line"></div>
+        <h2>Bilder verwalten</h2>
+        <p><strong>Note:</strong> Die Superbowl Applikation wird in einem
+          sogenannten <strong>jar</strong> (Java Archive) ausgeliefert. Die
+          Datei <strong>superbowl.jar</strong> liegt im Verzeichnis <strong>/opt/superbowl/bin</strong>.</p>
+        <p>Um Bilder von Schalen der Superbowl Applikation zur Verfügung zu
+          stellen müssen diese in die Datei <strong>superbowl.jar</strong>
+          eingestellt werden!</p>
+        <p>Folgende Schritte in der angegebenen Reihenfolge ausführen:</p>
+        <ul>
+          <li>Den <strong>Datei-Browser</strong> öffnen</li>
+          <li>Unter <strong>Dateisystem</strong> zum Verzeichnis <strong>/opt/superbowl/bin</strong>
+            navigieren</li>
+          <li>Mit der linken Maustaste die Datei <strong>superbowl.jar</strong>
+            markieren</li>
+          <li>Mit der rechten Maustaste das <strong>Kontextmenu</strong> öffnen</li>
+          <li>Den obersten Eintrag <strong>Mit Archivmanager öffnen</strong>
+            selektieren.</li>
+        </ul>
+        <p>Im Archivmanager navigierst Du in den Unterordner <strong>assets/images/bowl</strong>.
+          Hier findest Du alle Bilder zu den Schalen im Format <strong>tp_bowl_{Ordinalnummer}.jpg</strong>.</p>
+        <div class="panel-group" id="accordion">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion"
+                  href="#collapse1">Bild(er) zufügen</a> </h4>
+            </div>
+            <div id="collapse1" class="panel-collapse collapse">
+              <div class="panel-body">
+                <p>In der Menuleiste im Archivmanager <strong>Bearbeiten -
+                    Dateien hinzufügen...</strong> auswählen. Auswahldialog <strong>Dateien
+                    hinzufügen</strong> poppt auf. Hier navigierst Du in das
+                  Verzeichnis auf Deinem Rechner, in dem Du die Bilder der
+                  Schalen abgelegt hast (z.B. Bilder/Schalen), selektierst
+                  das/die Bild(er) welche Du in das Archiv einfügen möchtest und
+                  bestätigst mit einem Klick auf den Button <strong>Hinzufügen</strong>.</p>
+                <p>Nach Abschluss der Arbeit mit dem Archivmanager diesen
+                  beenden!</p>
+              </div>
+               </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title"> <a data-toggle="collapse" data-parent="#accordion"
+                    href="#collapse2">Bild(er) entfernen</a> </h4>
+              </div>
+              <div id="collapse2" class="panel-collapse collapse">
+                <div class="panel-body">
+                  <p>Aus der Liste der angezeigten Bilddateien im Archivmanager
+                    wählst Du eine oder mehrere Bilddateien mit einem Klick der
+                    linken Maustaste aus (mehrere Dateien auswählen durch
+                    gleichzeitiges Drücken der Steuerung-Taste). Alle zum
+                    Löschen ausgewählten Bilddateien sing grün hinterlegt. Mit
+                    der rechten Maustaste das Kontextmenu öffnen und <strong>Löschen</strong>
+                    wählen. Im folgenden Dialogfenster die Voreinstellung <strong>Gewählte
+                      Dateien</strong> belassen und mit Klick auf den Button <strong>Löschen</strong>
+                    bestätigen.</p>
+                  <p>Nach Abschluss der Arbeit mit dem Archivmanager diesen
+                    beenden!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- jQuery CDN -->
+      <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+      <!-- Bootstrap Js CDN -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <script type="text/javascript">
+             $(document).ready(function () {
+                 $('#sidebarCollapse').on('click', function () {
+                     $('#sidebar').toggleClass('active');
+                 });
+             });
+         </script> </div>
+  </body>
+</html>
